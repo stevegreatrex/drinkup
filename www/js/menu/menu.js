@@ -7,8 +7,6 @@
 	])
 
 		.controller('MenuCtrl', function ($scope, $state) {
-			$scope.goHome = function() {
-				$state.go('app.home', {}, { reload: true });
-			};
+
 		});
 }(angular));
