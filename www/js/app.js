@@ -6,8 +6,18 @@
 (function(angular) { 'use strict';
   angular.module('drinkup', [
 		'ionic',
+		'indexedDB',
+		'angularMoment',
+
+		'drinkup.data.db',
+		'drinkup.data.drinkTypes',
+		'drinkup.data.sessionRepository',
+
+		'drinkup.server',
+		'drinkup.utils',
 		'drinkup.menu',
-		'drinkup.home'
+		'drinkup.home',
+		'drinkup.session'
 	])
 
     .run(function($ionicPlatform) {
@@ -27,7 +37,8 @@
 			$stateProvider
 
 				.state('app', {
-					url: '',
+					url: '/app',
+					abstract: true,
 					templateUrl: 'js/menu/menu.html',
 					controller: 'MenuCtrl'
 				})
@@ -40,9 +51,20 @@
 							controller: 'HomeCtrl'
 						}
 					}
-				});
+				})
+
+				.state('app.session', {
+					url: '/session/:sessionId',
+					views: {
+						content: {
+							templateUrl: 'js/session/session.html',
+							controller: 'SessionCtrl'
+						}
+					}
+				})
+			;
 
 			// if none of the above states are matched, use this as the fallback
-			$urlRouterProvider.otherwise('/home');
+			$urlRouterProvider.otherwise('/app/home');
 		});
 }(angular));
