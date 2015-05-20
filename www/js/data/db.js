@@ -10,7 +10,11 @@
 			$indexedDBProvider
 				.connection('drinkup')
 				.upgradeDatabase(1, function(event, db, transaction) {
-					var sessions = db.createObjectStore('session', { keyPath: 'id' });
+					db.createObjectStore('session', { keyPath: 'id' });
+				})
+				.upgradeDatabase(2, function(event, db, transaction) {
+					var drinks = db.createObjectStore('drink', { keyPath: 'id' });
+					drinks.createIndex('sessionId', 'sessionId', { unique: false });
 				});
 		});
 }(angular));

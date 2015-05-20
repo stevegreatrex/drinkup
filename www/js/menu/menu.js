@@ -6,7 +6,9 @@
 		'ionic'
 	])
 
-		.controller('MenuCtrl', ['$scope', function ($scope) {
-
-		}]);
+		.controller('MenuCtrl', function ($scope, $state) {
+			$scope.goHome = function() {
+				$state.go('app.home', {}, { reload: true });
+			};
+		});
 }(angular));

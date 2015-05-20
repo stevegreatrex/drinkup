@@ -14,6 +14,15 @@
 						var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
 						return v.toString(16);
 					});
+				},
+
+				sortByReverseDate: function(array, dateKey) {
+					array.sort(function(a,b) {
+						var aStart = moment(a[dateKey]);
+						var bStart = moment(b[dateKey]);
+						return aStart.isBefore(bStart) ? 1 : -1;
+					});
+					return array;
 				}
 			};
 		});

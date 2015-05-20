@@ -1,3 +1,12 @@
 <ion-view view-title="{{description}}">
 	<p>Started <span am-time-ago="startDate"></span></p>
-</ion-view>
+	<button ng-repeat="drinkType in drinkTypes" ng-click="addDrink(drinkType)" class="button button-dark">
+		Have another {{drinkType.name}}
+	</button>
+	<ion-list>
+		<ion-item ng-repeat="drink in drinks">
+			<span>{{drink.drinkType.name}}</span>
+			<span am-time-ago="drink.date"></span>
+		</ion-item>
+	</ion-list>
+	</ion-view>

@@ -8,9 +8,7 @@
 	angular.module('drinkup.data.drinkTypes', [])
 
 		.constant('drinkTypes', [
-			{ id: 1, name: 'Stella', category: 'Lager' },
-			{ id: 2, name: 'Becks', category: 'Lager' },
-			{ id: 3, name: 'Rebellion Red', category: 'Ale' },
-			{ id: 4, name: 'White wine', category: 'Wine' }
+			{ id: 1, name: 'Pint of lager', units: 2 },
+			{ id: 2, name: 'Small glass of wine', units: 2 }
 		]);
 }(angular));

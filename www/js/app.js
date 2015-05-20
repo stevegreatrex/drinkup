@@ -12,6 +12,7 @@
 		'drinkup.data.db',
 		'drinkup.data.drinkTypes',
 		'drinkup.data.sessionRepository',
+		'drinkup.data.sessionLevels',
 
 		'drinkup.server',
 		'drinkup.utils',
