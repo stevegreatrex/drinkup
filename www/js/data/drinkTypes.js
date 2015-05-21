@@ -9,6 +9,6 @@
 
 		.constant('drinkTypes', [
 			{ id: 1, name: 'Pint of lager', units: 2 },
-			{ id: 2, name: 'Small glass of wine', units: 2 }
+			{ id: 2, name: 'Small glass of wine', units: 1 }
 		]);
 }(angular));
