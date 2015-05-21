@@ -2,10 +2,12 @@
 	<button ng-click="startSession()" class="button button-block button-large button-balanced">
 		Go Drinking!
 	</button>
-	<ion-list>
-		<ion-item ng-repeat="session in sessions" href="#/app/session/{{session.id}}">
-			<span>{{session.description}}</span>
-			<span am-time-ago="session.startDate"></span>
-		</ion-item>
-	</ion-list>
+	<div class="card">
+		<ion-list>
+			<ion-item ng-repeat="session in sessions" href="#/app/session/{{session.id}}">
+				<span>{{session.description}}</span>
+				<span am-time-ago="session.startDate"></span>
+			</ion-item>
+		</ion-list>
+	</div>
 </ion-view>

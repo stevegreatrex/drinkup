@@ -13,9 +13,11 @@
 		'drinkup.data.drinkTypes',
 		'drinkup.data.sessionRepository',
 		'drinkup.data.sessionLevels',
-
+		'drinkup.data.profile',
 		'drinkup.server',
 		'drinkup.utils',
+		'drinkup.calculator',
+
 		'drinkup.menu',
 		'drinkup.home',
 		'drinkup.session'
