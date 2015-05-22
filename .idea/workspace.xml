@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="957a6a53-f53f-46ae-bd5f-f9b27c91f608" name="Default" comment="Working on a scrolling issue&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/session/add-drink.html" afterPath="$PROJECT_DIR$/www/js/session/add-drink.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/data/drinkTypes.js" afterPath="$PROJECT_DIR$/www/js/data/drinkTypes.js" />
+    <list default="true" id="957a6a53-f53f-46ae-bd5f-f9b27c91f608" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/session/session.js" afterPath="$PROJECT_DIR$/www/js/session/session.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drinkup.app.iws" />
@@ -138,11 +134,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="session.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="session.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/www/js/session/session.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="185" column="16" selection-start-line="185" selection-start-column="16" selection-end-line="185" selection-end-column="16" />
+                <state vertical-scroll-proportion="0.6351351">
+                  <caret line="176" column="26" selection-start-line="176" selection-start-column="26" selection-end-line="176" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -161,13 +157,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider editor-type-id="MarkdownPreviewEditor">
                 <state />
               </provider>
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.12788633">
+                <state vertical-scroll-proportion="-2.4827585">
                   <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
                   <folding />
                 </state>
@@ -217,9 +213,9 @@
         <option value="$PROJECT_DIR$/www/js/session/session.html" />
         <option value="$PROJECT_DIR$/www/js/data/drinkTypes.js" />
         <option value="$PROJECT_DIR$/www/js/session/add-drink.html" />
-        <option value="$PROJECT_DIR$/www/js/session/session.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/www/css/style.css" />
+        <option value="$PROJECT_DIR$/www/js/session/session.js" />
       </list>
     </option>
   </component>
@@ -496,7 +492,13 @@
       <option name="project" value="LOCAL" />
       <updated>1432332086018</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="FINALLY fixed scrolling&#10;Made the &quot;drink search&quot; a bit easier to hit&#10;Marked off a few todos">
+      <created>1432333591625</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1432333591625</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -544,7 +546,8 @@
     <MESSAGE value="Basic nvd3 chart" />
     <MESSAGE value="Session start now uses first drink time (if present)&#10;Start &amp; end labels on chart are now descriptive&#10;" />
     <MESSAGE value="Working on a scrolling issue&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on a scrolling issue&#10;" />
+    <MESSAGE value="FINALLY fixed scrolling&#10;Made the &quot;drink search&quot; a bit easier to hit&#10;Marked off a few todos" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINALLY fixed scrolling&#10;Made the &quot;drink search&quot; a bit easier to hit&#10;Marked off a few todos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -921,14 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/session/session.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="185" column="16" selection-start-line="185" selection-start-column="16" selection-end-line="185" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/lib/ionic/README.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -945,7 +940,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12788633">
+        <state vertical-scroll-proportion="-2.4827585">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
           <folding />
         </state>
@@ -955,6 +950,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4256757">
           <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/session/session.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6351351">
+          <caret line="176" column="26" selection-start-line="176" selection-start-column="26" selection-end-line="176" selection-end-column="26" />
           <folding />
         </state>
       </provider>

@@ -157,10 +157,16 @@
 					bac: drivingLimit
 				});
 
+				var nowPoints = [
+					{ date: moment(), bac: 0 },
+					{ date: moment(), bac: $scope.bloodAlcohol }
+				];
+
 				$scope.bacChart = {
 					data: [
 						{ key: 'Blood Alcohol', values: dataPoints },
-						{ key: 'Driving limit', values: drivingLimitPoints }
+						{ key: 'Driving limit', values: drivingLimitPoints },
+						{ key: 'Now', values: nowPoints }
 					],
 					options: {
 						chart: {
@@ -172,7 +178,7 @@
 								bottom: 20,
 								left: 30
 							},
-							color: ['rgb(31, 119, 180)', 'rgba(255,0,0,0.4)'],
+							color: ['rgb(31, 119, 180)', 'rgba(255,0,0,0.4)', '#999'],
 							useInteractiveGuideline: true,
 							x: function(d){ return d.date; },
 							y: function(d){ return d.bac; },
