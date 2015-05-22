@@ -159,7 +159,7 @@
 
 				var nowPoints = [
 					{ date: moment(), bac: 0 },
-					{ date: moment(), bac: $scope.bloodAlcohol }
+					{ date: moment(), bac: 0.2 } //max forced line on chart
 				];
 
 				$scope.bacChart = {
