@@ -7,7 +7,7 @@
 (function(angular) {
 	angular.module('drinkup.utils', [])
 
-		.factory('utils', function($q, $indexedDB, moment) {
+		.factory('drinkupUtils', function($q, $indexedDB, moment) {
 			var utils = {
 				createGuid: function() {
 					return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {

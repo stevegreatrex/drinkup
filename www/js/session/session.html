@@ -1,29 +1,33 @@
 <ion-view view-title="{{description}}">
-	<div class="stats">
-		<div class="row">
-			<div class="col col-50 card">{{drinkingTime}}</div>
-			<div class="col col-50 card">{{totalDrinks}} drinks</div>
+	<ion-scroll>
+		<div class="stats">
+			<div class="row">
+				<div class="col col-50 card">{{drinkingTime}}</div>
+				<div class="col col-50 card">{{totalDrinks}} drinks</div>
+			</div>
+			<div class="row">
+				<div class="col col-50 card">{{bloodAlcohol | number:3}} blood alcohol</div>
+				<div class="col col-50 card">{{totalUnits | number:1}} units</div>
+			</div>
 		</div>
-		<div class="row">
-			<div class="col col-50 card">{{bloodAlcohol | number:3}} blood alcohol</div>
-			<div class="col col-50 card">{{totalUnits | number:1}} units</div>
+
+		<nvd3 data="bacChart.data" options="bacChart.options"></nvd3>
+
+		<button class="button button-block" ng-click="showAddDrinkModal()">
+			<span ng-show="drinks.length">Have another!</span>
+			<span ng-show="!drinks.length">Get started!</span>
+		</button>
+
+		<button class="button button-block" ng-click="sameAgain()" ng-show="drinks.length">
+			Same again!
+		</button>
+		<div class="card">
+			<ion-list>
+				<ion-item ng-repeat="drink in drinks" ng-click="showDrinkInfoModal(drink)">
+					<span>{{drink.drinkType.name}}</span>
+					<span am-time-ago="drink.date"></span>
+				</ion-item>
+			</ion-list>
 		</div>
-	</div>
-
-	<button class="button button-block" ng-click="showAddDrinkModal()">
-		<span ng-show="drinks.length">Have another!</span>
-		<span ng-show="!drinks.length">Get started!</span>
-	</button>
-
-	<button class="button button-block" ng-click="sameAgain()" ng-show="drinks.length">
-		Same again!
-	</button>
-	<div class="card">
-		<ion-list>
-			<ion-item ng-repeat="drink in drinks" ng-click="showDrinkInfoModal(drink)">
-				<span>{{drink.drinkType.name}}</span>
-				<span am-time-ago="drink.date"></span>
-			</ion-item>
-		</ion-list>
-	</div>
+	</ion-scroll>
 </ion-view>

@@ -8,7 +8,7 @@
 		'ionic',
 		'indexedDB',
 		'angularMoment',
-		'chart.js',
+		'nvd3',
 		'ion-autocomplete',
 
 		'drinkup.data.db',

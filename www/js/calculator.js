@@ -10,6 +10,8 @@
 			female: 0.49
 		})
 
+		.constant('drivingLimit', 0.08)
+
 		.factory('calculator',function(moment, genderConstants) {
 			return {
 				/**
@@ -27,6 +29,15 @@
 					var result = bac - alcoholMetabolised;
 
 					return result < 0 ? 0 : result;
+				},
+
+				/**
+				 * Calculated the amount of time until blood alcohol reaches zero
+				 * @param currentBac Current blood alcohol level
+				 * @returns {moment}
+				 */
+				timeUntilSober: function(currentBac) {
+					return moment.duration(currentBac / 0.015, 'hours');
 				}
 			};
 		});

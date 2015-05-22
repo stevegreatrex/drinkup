@@ -7,7 +7,7 @@
 (function(angular) {
 	angular.module('drinkup.data.sessionRepository', [])
 
-		.factory('sessionRepository', function($q, $indexedDB, moment, utils, sessionLevels) {
+		.factory('sessionRepository', function($q, $indexedDB, moment, drinkupUtils, sessionLevels) {
 			function SessionRepository() {
 			}
 
@@ -24,7 +24,7 @@
 
 			SessionRepository.prototype.addSession = function() {
 				var session = {
-					id: utils.createGuid(),
+					id: drinkupUtils.createGuid(),
 					description: sessionLevels.getLevel(0),
 					totalUnits: 0,
 					startDate: moment().toDate()
@@ -45,7 +45,7 @@
 						return store.getAll();
 					})
 					.then(function(sessions) {
-						return utils.sortByReverseDate(sessions, 'startDate');
+						return drinkupUtils.sortByReverseDate(sessions, 'startDate');
 					});
 			};
 
@@ -66,7 +66,7 @@
 							})
 							.then(function(drinks) {
 								session.totalUnits = session.totalUnits || 0;
-								session.drinks = utils.sortByReverseDate(drinks || [], 'date');
+								session.drinks = drinkupUtils.sortByReverseDate(drinks || [], 'date');
 								return session;
 							});
 					})
@@ -78,7 +78,7 @@
 					sessionId: sessionId,
 					drinkType: drinkType,
 					serving: serving,
-					id: utils.createGuid(),
+					id: drinkupUtils.createGuid(),
 					date: moment.utc().toDate(),
 					units: serving.ml * drinkType.abv / 1000,
 					cal: serving.ml * drinkType.calPerMl

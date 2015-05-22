@@ -14,10 +14,11 @@
 																				 sessionRepository,
 																				 sessionLevels,
 																				 calculator,
-																				 utils,
+																				 drinkupUtils,
 																				 profile,
 																				 drinkTypes,
-																				 drinkCategories) {
+																				 drinkCategories,
+																				 drivingLimit) {
 
 			$scope.drinkCategories = drinkCategories;
 
@@ -114,6 +115,84 @@
 				$scope.description = sessionLevels.getLevel($scope.session.totalUnits);
 				$scope.totalDrinks = $scope.drinks.length;
 				$scope.bloodAlcohol = calculator.calculateBloodAlcohol(profile, drinkingTime, $scope.totalUnits);
+				updateChart();
+			}
+
+			function updateChart() {
+				var dataPoints = [];
+				var drivingLimitPoints = [
+					{
+						date: $scope.startDate.toDate(),
+						bac: drivingLimit
+					}
+				];
+
+				var totalUnits = 0;
+				dataPoints.push({
+					date: $scope.startDate.toDate(),
+					bac: totalUnits
+				});
+
+
+				for (var i = $scope.drinks.length-1; i >= 0; i--) {
+					var drink = $scope.drinks[i];
+					var drinkTime = moment(drink.date);
+					var drinkingTime = moment.duration(drinkTime.diff($scope.startDate));
+					totalUnits += drink.units;
+					dataPoints.push({
+						date: drinkTime.toDate(),
+						bac: calculator.calculateBloodAlcohol(profile, drinkingTime, totalUnits)
+					});
+				}
+
+				var soberTime = moment().add(calculator.timeUntilSober($scope.bloodAlcohol)).toDate()
+				dataPoints.push({
+					date: soberTime,
+					bac: 0
+				});
+				drivingLimitPoints.push({
+					date: soberTime,
+					bac: drivingLimit
+				});
+
+				$scope.bacChart = {
+					data: [
+						{ key: 'Blood Alcohol', values: dataPoints },
+						{ key: 'Driving limit', values: drivingLimitPoints }
+					],
+					options: {
+						chart: {
+							type: 'lineChart',
+							height: 200,
+							margin: {
+								top: 0,
+								right: 20,
+								bottom: 20,
+								left: 20
+							},
+							color: ['rgb(31, 119, 180)', 'rgba(255,0,0,0.4)'],
+							useInteractiveGuideline: true,
+							x: function(d){ return d.date; },
+							y: function(d){ return d.bac; },
+							padData: false,
+							noData: 'Nothing here!',
+							forceY: [0, 0.1, 0.2],
+							forceX: [new Date()],
+							xScale: d3.time.scale(),
+							pointShape: 'circle',
+							yAxis: {
+								tickFormat: d3.format('.3f'),
+							},
+							interpolate: 'basis',
+							showYAxis: false,
+							xAxis: {
+								tickFormat: function(d) {
+									return d3.time.format('%H:%M')(new Date(d));
+								}
+							}
+						}
+					}
+				};
 			}
 
 			var monitor = $interval(updateStats, 1000 * 60);
