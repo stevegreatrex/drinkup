@@ -9,6 +9,7 @@
 		'indexedDB',
 		'angularMoment',
 		'chart.js',
+		'ion-autocomplete',
 
 		'drinkup.data.db',
 		'drinkup.data.drinkTypes',
