@@ -6,8 +6,8 @@
 	angular.module('drinkup.calculator', [])
 
 		.constant('genderConstants', {
-			male: 0.68,
-			female: 0.55
+			male: 0.58,
+			female: 0.49
 		})
 
 		.factory('calculator',function(moment, genderConstants) {
@@ -20,15 +20,10 @@
 				 * @returns {number}
 				 */
 				calculateBloodAlcohol: function(profile, timeSinceFirstDrink, units) {
-					//http://www.wikihow.com/Calculate-Blood-Alcohol-Content-%28Widmark-Formula%29
-					var alcoholConsumed = units * 0.06;
-					var bloodSGCompensation = alcoholConsumed * 100 * 1.055;
-					var weightInLbs = profile.weight * 2.20462;
-
-					var bac = bloodSGCompensation / (weightInLbs * genderConstants[profile.gender]);
-
+					//http://en.wikipedia.org/wiki/Blood_alcohol_content#Estimated_blood_ethanol_concentration_.28EBAC.29
+					var alcoholConsumed = units * 0.806 * 1.2;
+					var bac = alcoholConsumed / (profile.weight * genderConstants[profile.gender]);
 					var alcoholMetabolised = moment.duration(timeSinceFirstDrink).as('hours') * 0.015;
-
 					var result = bac - alcoholMetabolised;
 
 					return result < 0 ? 0 : result;
