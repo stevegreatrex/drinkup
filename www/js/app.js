@@ -8,6 +8,7 @@
 		'ionic',
 		'indexedDB',
 		'angularMoment',
+		'chart.js',
 
 		'drinkup.data.db',
 		'drinkup.data.drinkTypes',

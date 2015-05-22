@@ -6,5 +6,5 @@
  * "Same again"
  * Drinks library
  * Burndown chart
- * UI!
+ * UI! (inc. icon)
  * Rounds
