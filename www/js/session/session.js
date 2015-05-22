@@ -11,12 +11,10 @@
 																				 $interval,
 																				 moment,
 																				 sessionRepository,
-																				 drinkTypes,
 																				 sessionLevels,
 																				 calculator,
 																				 utils,
 																				 profile) {
-			$scope.drinkTypes = drinkTypes;
 
 			sessionRepository.getSession($stateParams.sessionId)
 				.then(function(session) {
@@ -27,11 +25,11 @@
 					updateStats();
 				});
 
-			$scope.addDrink = function(drinkType) {
-				sessionRepository.addDrink($scope.session.id, drinkType)
+			$scope.addDrink = function(drinkType, serving) {
+				sessionRepository.addDrink($scope.session.id, drinkType, serving)
 					.then(function(drink) {
 						$scope.drinks.unshift(drink);
-						$scope.session.totalUnits = 0 + $scope.session.totalUnits + drink.drinkType.units;
+						$scope.session.totalUnits = 0 + $scope.session.totalUnits + drink.units;
 						updateStats();
 					});
 			};

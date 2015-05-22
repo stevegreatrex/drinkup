@@ -7,6 +7,49 @@
 (function(angular) {
 	angular.module('drinkup.data.drinkTypes', [])
 
+		.constant('drinkCategories', {
+			beer: {
+				servings: [
+					{ name: 'Pint', ml: 568 },
+					{ name: 'Half Pint', ml: 284 },
+					{ name: '500ml', ml: 500 },
+					{ name: '400ml', ml: 400 },
+					{ name: '330ml', ml: 330 },
+					{ name: '300ml', ml: 300 },
+					{ name: '200ml', ml: 200 }
+				]
+			},
+			wine: {
+				servings: [
+					{ name: 'Large Glass', ml: 250 },
+					{ name: 'Small Glass', ml: 125 },
+					{ name: '250ml', ml: 250 },
+					{ name: '125ml', ml: 125 }
+				]
+			},
+			shot: {
+				servings: [
+					{ name: 'Double', ml: 50 },
+					{ name: 'Single', ml: 25 }
+				]
+			},
+			cocktail: {
+				servings: [
+					{ name: 'One Drink', ml: 170 }
+				]
+			},
+			other: {
+				servings: [
+					{ name: '500ml', ml: 500 },
+					{ name: '400ml', ml: 400 },
+					{ name: '300ml', ml: 300 },
+					{ name: '200ml', ml: 200 },
+					{ name: '100ml', ml: 100 },
+					{ name: '50ml', ml: 50 }
+				]
+			}
+		})
+
 		.constant('drinkTypes', [
 			{
 				name: '1554 Enlightened Black Ale',

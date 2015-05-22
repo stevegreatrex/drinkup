@@ -72,18 +72,22 @@
 					})
 			};
 
-			SessionRepository.prototype.addDrink = function(sessionId, drinkType) {
+			SessionRepository.prototype.addDrink = function(sessionId, drinkType, serving) {
 				var repo = this;
 				var drink = {
 					sessionId: sessionId,
 					drinkType: drinkType,
+					serving: serving,
 					id: utils.createGuid(),
-					date: moment.utc().toDate()
+					date: moment.utc().toDate(),
+					units: serving.ml * drinkType.abv / 1000,
+					cal: serving.ml * drinkType.calPerMl
 				};
 
 				return this.getSession(sessionId)
 					.then(function(session) {
-						session.totalUnits = 0 + session.totalUnits + drink.drinkType.units;
+						session.totalUnits = 0 + session.totalUnits + drink.units;
+						session.totalCal = 0 + session.totalCal + drink.cal;
 						session.description = sessionLevels.getLevel(session.totalUnits);
 
 						return repo._openStore('drink')
