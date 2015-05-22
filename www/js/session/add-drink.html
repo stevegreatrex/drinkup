@@ -14,6 +14,6 @@
 	</ion-content>
 	<ion-footer-bar>
 		<button class="button button-assertive" ng-click="cancelAddDrinkModal()">Cancel</button>
-		<button class="button button-balanced" ng-disabled="!newDrink.serving" ng-click="addDrink()">Add {{newDrink.type.name}}</button>
+		<button class="button button-balanced" ng-disabled="!newDrink.serving" ng-click="addDrink(newDrink.type, newDrink.serving)">Add {{newDrink.type.name}}</button>
 	</ion-footer-bar>
 </ion-modal-view>

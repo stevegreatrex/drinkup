@@ -51,19 +51,24 @@
 			};
 
 			$scope.$watch('newDrink.type', function(drinkType) {
-				$scope.newDrink.serving = drinkCategories[drinkType.category].servings[0];
+				$scope.newDrink.serving = drinkType ? drinkCategories[drinkType.category].servings[0] : null;
 			});
 
-			$scope.addDrink = function() {
+			$scope.addDrink = function(drinkType, serving) {
 				$scope.addDrinkModal.hide();
-				if (!$scope.newDrink.type || !$scope.newDrink.serving) { return; }
+				if (!drinkType || !serving) { return; }
 
-				return sessionRepository.addDrink($scope.session.id, $scope.newDrink.type, $scope.newDrink.serving)
+				return sessionRepository.addDrink($scope.session.id, drinkType, serving)
 					.then(function(drink) {
 						$scope.drinks.unshift(drink);
 						$scope.session.totalUnits = 0 + $scope.session.totalUnits + drink.units;
 						updateStats();
 					});
+			};
+
+			$scope.sameAgain = function() {
+				if (!$scope.drinks.length) return;
+				$scope.addDrink($scope.drinks[0].drinkType, $scope.drinks[0].serving);
 			};
 
 			$scope.cancelAddDrinkModal = function() {
@@ -72,8 +77,14 @@
 			};
 
 			function updateStats() {
-				var drinkingTime = moment.duration(moment().diff($scope.startDate));
-				$scope.totalUnits = $scope.session.totalUnits;
+
+				var timeOfLastDrink = moment($scope.drinks.length ? $scope.drinks[0].date : null);
+				var endOfSession = (moment().diff(timeOfLastDrink, 'hours', true) < 4) ?
+					moment() : timeOfLastDrink;
+
+				var drinkingTime = moment.duration(endOfSession.diff($scope.startDate));
+
+				$scope.totalUnits = utils.round($scope.session.totalUnits, 0);
 				$scope.drinkingTime = drinkingTime.humanize();
 				$scope.description = sessionLevels.getLevel($scope.session.totalUnits);
 				$scope.totalDrinks = $scope.drinks.length;

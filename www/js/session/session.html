@@ -15,6 +15,9 @@
 		<span ng-show="!drinks.length">Get started!</span>
 	</button>
 
+	<button class="button button-block" ng-click="sameAgain()" ng-show="drinks.length">
+		Same again!
+	</button>
 	<div class="card">
 		<ion-list>
 			<ion-item ng-repeat="drink in drinks">
