@@ -21,14 +21,14 @@
 
 			$scope.drinkCategories = drinkCategories;
 
-			$ionicModal.fromTemplateUrl('/js/session/add-drink.html', {
+			$ionicModal.fromTemplateUrl('js/session/add-drink.html', {
 				scope: $scope,
 				animation: 'slide-in-up'
 			}).then(function(modal) {
 				$scope.addDrinkModal = modal;
 			});
 
-			$ionicModal.fromTemplateUrl('/js/session/drink-info.html', {
+			$ionicModal.fromTemplateUrl('js/session/drink-info.html', {
 				scope: $scope,
 				animation: 'slide-in-up'
 			}).then(function(modal) {
