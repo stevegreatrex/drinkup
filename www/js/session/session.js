@@ -189,7 +189,7 @@
 							xAxis: {
 								tickFormat: function(d) {
 									if (moment(d).isSame($scope.startDate)) return 'kick-off';
-									if (moment(d).isSame(soberTime)) return 'sober';
+									if (moment(d).isSame(soberTime)) return 'sober ' + d3.time.format('%H:%M')(new Date(d));
 									return d3.time.format('%H:%M')(new Date(d));
 								}
 							}

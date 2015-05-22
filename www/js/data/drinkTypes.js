@@ -2888,7 +2888,7 @@
 				id: 405
 			},
 			{
-				name: 'Pure Ethanol  Not a real drink, for comparison only',
+				name: 'Pure Ethanol (!)',
 				abv: 100,
 				category: 'shot',
 				calPerMl: 5.584283683976254,

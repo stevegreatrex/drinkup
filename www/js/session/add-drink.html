@@ -7,7 +7,8 @@
 						  items-method="searchDrinks(query)"
 						  item-view-value-key="name"
 						  select-items-label="Select a drink"
-						  placeholder="Search drinks..."></ion-autocomplete>
+						  placeholder="Find your drink..."
+						  class="drink-search"></ion-autocomplete>
 		<ion-radio ng-model="newDrink.serving" ng-repeat="serving in drinkCategories[newDrink.type.category].servings" ng-value="serving">
 			{{serving.name}}
 		</ion-radio>
