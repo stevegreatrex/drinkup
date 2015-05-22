@@ -84,12 +84,11 @@
 
 				var drinkingTime = moment.duration(endOfSession.diff($scope.startDate));
 
-				$scope.totalUnits = utils.round($scope.session.totalUnits, 0);
+				$scope.totalUnits = $scope.session.totalUnits;
 				$scope.drinkingTime = drinkingTime.humanize();
 				$scope.description = sessionLevels.getLevel($scope.session.totalUnits);
 				$scope.totalDrinks = $scope.drinks.length;
-				$scope.bloodAlcohol = utils.roundToPaddedString(
-					calculator.calculateBloodAlcohol(profile, drinkingTime, $scope.totalUnits), 3);
+				$scope.bloodAlcohol = calculator.calculateBloodAlcohol(profile, drinkingTime, $scope.totalUnits);
 			}
 
 			var monitor = $interval(updateStats, 1000 * 60);
