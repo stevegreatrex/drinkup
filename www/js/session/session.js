@@ -168,9 +168,9 @@
 							height: 200,
 							margin: {
 								top: 0,
-								right: 20,
+								right: 40,
 								bottom: 20,
-								left: 20
+								left: 30
 							},
 							color: ['rgb(31, 119, 180)', 'rgba(255,0,0,0.4)'],
 							useInteractiveGuideline: true,
