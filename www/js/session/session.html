@@ -6,7 +6,7 @@
 		</div>
 		<div class="row">
 			<div class="col col-50 card">{{bloodAlcohol | number:3}} blood alcohol</div>
-			<div class="col col-50 card">{{totalUnits | number:0}} units</div>
+			<div class="col col-50 card">{{totalUnits | number:1}} units</div>
 		</div>
 	</div>
 
@@ -20,7 +20,7 @@
 	</button>
 	<div class="card">
 		<ion-list>
-			<ion-item ng-repeat="drink in drinks">
+			<ion-item ng-repeat="drink in drinks" ng-click="showDrinkInfoModal(drink)">
 				<span>{{drink.drinkType.name}}</span>
 				<span am-time-ago="drink.date"></span>
 			</ion-item>

@@ -106,6 +106,33 @@
 					});
 			};
 
+			SessionRepository.prototype.deleteDrink = function(sessionId, drinkId) {
+				var repo = this;
+
+				return this._openStore('drink')
+					.then(function(drinkStore) {
+						return drinkStore.find(drinkId)
+							.then(function (drink) {
+								return drinkStore.delete(drinkId)
+									.then(function() {
+										return repo.getSession(sessionId);
+									})
+									.then(function (session) {
+										session.totalUnits = 0 + session.totalUnits - drink.units;
+										if (session.totalUnits < 0) session.totalUnits = 0;
+										session.totalCal = 0 + session.totalCal - drink.cal;
+										if (session.totalCal < 0) session.totalCal = 0;
+										session.description = sessionLevels.getLevel(session.totalUnits);
+
+										return repo._openStore()
+											.then(function (sessionStore) {
+												return sessionStore.upsert(session);
+											});
+									});
+							});
+					});
+			};
+
 			return new SessionRepository();
 		});
 }(angular));

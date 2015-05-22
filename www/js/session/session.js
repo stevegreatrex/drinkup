@@ -28,6 +28,13 @@
 				$scope.addDrinkModal = modal;
 			});
 
+			$ionicModal.fromTemplateUrl('/js/session/drink-info.html', {
+				scope: $scope,
+				animation: 'slide-in-up'
+			}).then(function(modal) {
+				$scope.drinkInfoModal = modal;
+			});
+
 			sessionRepository.getSession($stateParams.sessionId)
 				.then(function(session) {
 					$scope.session = session;
@@ -62,6 +69,7 @@
 					.then(function(drink) {
 						$scope.drinks.unshift(drink);
 						$scope.session.totalUnits = 0 + $scope.session.totalUnits + drink.units;
+						$scope.session.totalCal = 0 + $scope.session.totalCal + drink.cal;
 						updateStats();
 					});
 			};
@@ -74,6 +82,23 @@
 			$scope.cancelAddDrinkModal = function() {
 				$scope.newDrink = {};
 				$scope.addDrinkModal.hide()
+			};
+
+			$scope.showDrinkInfoModal = function(drink) {
+				$scope.selectedDrink = drink;
+				$scope.drinkInfoModal.show();
+			};
+
+			$scope.deleteDrink = function(drink) {
+				if (!drink) return;
+				$scope.drinkInfoModal.hide();
+				sessionRepository.deleteDrink($scope.session.id, drink.id)
+					.then(function() {
+						$scope.drinks.splice($scope.drinks.indexOf(drink), 1);
+						$scope.session.totalUnits = 0 + $scope.session.totalUnits - drink.units;
+						$scope.session.totalCal = 0 + $scope.session.totalCal - drink.cal;
+						updateStats();
+					});
 			};
 
 			function updateStats() {
@@ -100,6 +125,7 @@
 				}
 
 				$scope.addDrinkModal && $scope.addDrinkModal.remove();
+				$scope.drinkInfoModal && $scope.drinkInfoModal.remove();
 			});
 		});
 }(angular));
