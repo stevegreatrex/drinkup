@@ -39,9 +39,11 @@
 			sessionRepository.getSession($stateParams.sessionId)
 				.then(function(session) {
 					$scope.session = session;
-					$scope.startDate = moment(session.startDate);
 					$scope.description = session.description;
 					$scope.drinks = session.drinks;
+
+					$scope.startDate = session.drinks.length ?
+						moment(session.drinks[session.drinks.length-1].date) : moment(session.startDate);
 					updateStats();
 				});
 
@@ -177,16 +179,17 @@
 							padData: false,
 							noData: 'Nothing here!',
 							forceY: [0, 0.1, 0.2],
-							forceX: [new Date()],
 							xScale: d3.time.scale(),
 							pointShape: 'circle',
 							yAxis: {
-								tickFormat: d3.format('.3f'),
+								tickFormat: d3.format('.3f')
 							},
 							interpolate: 'basis',
 							showYAxis: false,
 							xAxis: {
 								tickFormat: function(d) {
+									if (moment(d).isSame($scope.startDate)) return 'kick-off';
+									if (moment(d).isSame(soberTime)) return 'sober';
 									return d3.time.format('%H:%M')(new Date(d));
 								}
 							}

@@ -13,6 +13,7 @@
 					{ name: 'Pint', ml: 568 },
 					{ name: 'Half Pint', ml: 284 },
 					{ name: '500ml', ml: 500 },
+					{ name: '440ml', ml: 440 },
 					{ name: '400ml', ml: 400 },
 					{ name: '330ml', ml: 330 },
 					{ name: '300ml', ml: 300 },
