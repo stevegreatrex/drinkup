@@ -82,16 +82,7 @@
 					cal: serving.ml * drinkType.calPerMl
 				};
 
-				return $cordovaGeolocation.getCurrentPosition({ timeout: 500 })
-					.then(function(location) {
-						if (location && location.coords) {
-							drink.location = {
-								latitude: location.coords.latitude,
-								longitude: location.coords.longitude
-							};
-						}
-						return repo.getSession(sessionId);
-					})
+				return repo.getSession(sessionId)
 					.then(function(session) {
 						if (isNaN(session.totalUnits)) session.totalUnits = 0;
 						if (isNaN(session.totalCal)) session.totalCal = 0;
@@ -101,6 +92,17 @@
 
 						return repo._openStore('drink')
 							.then(function(drinkStore) {
+								$cordovaGeolocation.getCurrentPosition()
+									.then(function(location) {
+										if (location && location.coords) {
+											drink.location = {
+												latitude: location.coords.latitude,
+												longitude: location.coords.longitude
+											};
+										}
+
+										drinkStore.upsert(drink);
+									});
 								return drinkStore.insert(drink);
 							})
 							.then(function() {
