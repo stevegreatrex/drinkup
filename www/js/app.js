@@ -45,6 +45,13 @@
       });
     })
 
+		.config(function(uiGmapGoogleMapApiProvider) {
+			uiGmapGoogleMapApiProvider.configure({
+				v: '3.17',
+				libraries: 'geometry,visualization'
+			});
+		})
+
 		.config(function($stateProvider, $urlRouterProvider) {
 			$stateProvider
 
