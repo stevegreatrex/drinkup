@@ -71,8 +71,8 @@
 				return sessionRepository.addDrink($scope.session.id, drinkType, serving)
 					.then(function(drink) {
 						$scope.drinks.unshift(drink);
-						$scope.session.totalUnits = 0 + $scope.session.totalUnits + drink.units;
-						$scope.session.totalCal = 0 + $scope.session.totalCal + drink.cal;
+						$scope.session.totalUnits += drink.units;
+						$scope.session.totalCal += drink.cal;
 						updateStats();
 					});
 			};
@@ -113,6 +113,7 @@
 				var drinkingTime = moment.duration(endOfSession.diff($scope.startDate));
 
 				$scope.totalUnits = $scope.session.totalUnits;
+				$scope.totalCal = $scope.session.totalCal;
 				$scope.drinkingTime = drinkingTime.humanize();
 				$scope.description = sessionLevels.getLevel($scope.session.totalUnits);
 				$scope.totalDrinks = $scope.drinks.length;
@@ -148,19 +149,20 @@
 				}
 
 				var lastDrink = dataPoints[dataPoints.length-1];
-				var soberTime = moment(lastDrink.date).add(calculator.timeUntilSober(lastDrink.bac)).toDate();
+				$scope.soberTime = moment(lastDrink.date).add(calculator.timeUntilSober(lastDrink.bac));
+				$scope.drivingTime = moment(lastDrink.date).add(calculator.timeUntilLegal(lastDrink.bac));
 				dataPoints.push({
-					date: soberTime,
+					date: $scope.soberTime.toDate(),
 					bac: 0
 				});
 				drivingLimitPoints.push({
-					date: soberTime,
+					date: $scope.soberTime.toDate(),
 					bac: drivingLimit
 				});
 
 				var data = [
 					{ key: 'Blood Alcohol', values: dataPoints },
-					{ key: 'Driving limit', values: drivingLimitPoints },
+					{ key: 'Driving limit', values: drivingLimitPoints }
 				];
 
 				if (moment().diff(moment(lastDrink.date), 'hours', true) < 4) {
@@ -202,7 +204,7 @@
 								tickFormat: function(d) {
 									var dMoment = moment(d);
 									if (dMoment.isSame($scope.startDate)) return 'kick-off';
-									if (dMoment.isSame(soberTime)) return 'sober ' + d3.time.format('%H:%M')(new Date(d));
+									if (dMoment.isSame($scope.soberTime)) return 'sober ' + d3.time.format('%H:%M')(new Date(d));
 									if (dMoment.hours() === 0 && dMoment.minutes() === 0) return dMoment.format('ddd Do');
 									return d3.time.format('%H:%M')(new Date(d));
 								}

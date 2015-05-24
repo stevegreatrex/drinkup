@@ -12,7 +12,7 @@
 
 		.constant('drivingLimit', 0.08)
 
-		.factory('calculator',function(moment, genderConstants) {
+		.factory('calculator',function(moment, genderConstants, drivingLimit) {
 			return {
 				/**
 				 * Calculates blood alcohol level at the specified time
@@ -38,6 +38,16 @@
 				 */
 				timeUntilSober: function(currentBac) {
 					return moment.duration(currentBac / 0.015, 'hours');
+				},
+
+				/**
+				 * Calculated the amount of time until blood alcohol reaches the
+				 * legal limit to drive
+				 * @param currentBac Current blood alcohol level
+				 * @returns {moment}
+				 */
+				timeUntilLegal: function(currentBac) {
+					return moment.duration((currentBac - drivingLimit) / 0.015, 'hours');
 				}
 			};
 		});

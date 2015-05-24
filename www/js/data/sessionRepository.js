@@ -86,8 +86,10 @@
 
 				return this.getSession(sessionId)
 					.then(function(session) {
-						session.totalUnits = 0 + session.totalUnits + drink.units;
-						session.totalCal = 0 + session.totalCal + drink.cal;
+						if (isNaN(session.totalUnits)) session.totalUnits = 0;
+						if (isNaN(session.totalCal)) session.totalCal = 0;
+						session.totalUnits += drink.units;
+						session.totalCal += drink.cal;
 						session.description = sessionLevels.getLevel(session.totalUnits);
 
 						return repo._openStore('drink')

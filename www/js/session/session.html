@@ -1,14 +1,28 @@
 <ion-view view-title="{{description}}">
 	<ion-scroll direction="y">
-		<div class="stats">
-			<div class="row">
-				<div class="col col-50 card">{{drinkingTime}}</div>
-				<div class="col col-50 card">{{totalDrinks}} drinks</div>
-			</div>
-			<div class="row">
-				<div class="col col-50 card">{{bloodAlcohol | number:3}} blood alcohol</div>
-				<div class="col col-50 card">{{totalUnits | number:1}} units</div>
-			</div>
+		<div class="row">
+			<div class="col col-50">Total Drinks</div>
+			<div class="col col-50">{{totalDrinks}}</div>
+		</div>
+		<div class="row">
+			<div class="col col-50">Total Units</div>
+			<div class="col col-50">{{totalUnits | number:1}}</div>
+		</div>
+		<div class="row">
+			<div class="col col-50">Total Calories</div>
+			<div class="col col-50">{{totalCal | number:0}}</div>
+		</div>
+		<div class="row">
+			<div class="col col-50">Current Blood Alcohol</div>
+			<div class="col col-50">{{bloodAlcohol | number:3}}</div>
+		</div>
+		<div class="row">
+			<div class="col col-50">Sober</div>
+			<div class="col col-50" title="{{soberTime | amDateFormat: 'HH:MM MMM Do'}}">{{soberTime.fromNow()}}</div>
+		</div>
+		<div class="row">
+			<div class="col col-50">Can drive</div>
+			<div class="col col-50" title="{{drivingTime | amDateFormat: 'HH:MM MMM Do'}}">{{drivingTime.fromNow()}}</div>
 		</div>
 
 		<nvd3 data="bacChart.data" options="bacChart.options"></nvd3>

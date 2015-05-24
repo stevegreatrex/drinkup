@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="957a6a53-f53f-46ae-bd5f-f9b27c91f608" name="Default" comment="">
+    <list default="true" id="957a6a53-f53f-46ae-bd5f-f9b27c91f608" name="Default" comment="Fixed calculation of sober time and made display of Now line conditional">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/calculator.js" afterPath="$PROJECT_DIR$/www/js/calculator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/session/drink-info.html" afterPath="$PROJECT_DIR$/www/js/session/drink-info.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/session/session.html" afterPath="$PROJECT_DIR$/www/js/session/session.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/session/session.js" afterPath="$PROJECT_DIR$/www/js/session/session.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/data/sessionRepository.js" afterPath="$PROJECT_DIR$/www/js/data/sessionRepository.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drinkup.app.iws" />
@@ -23,18 +27,68 @@
     <favorites_list name="drinkup.app" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="session.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/js/session/session.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4560811">
-              <caret line="163" column="10" selection-start-line="163" selection-start-column="10" selection-end-line="163" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5021021">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="session.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/www/js/session/session.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.46902654">
+                  <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="drink-info.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/js/session/drink-info.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-13.333333">
+                  <caret line="20" column="14" selection-start-line="5" selection-start-column="8" selection-end-line="20" selection-end-column="14" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="calculator.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/js/calculator.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="49" column="59" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="59" />
+                  <folding>
+                    <element signature="e#0#44#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="sessionRepository.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/js/data/sessionRepository.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="session.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/www/js/session/session.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.7584459">
+                  <caret line="206" column="18" selection-start-line="206" selection-start-column="18" selection-end-line="206" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,9 +123,6 @@
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/js/utils.js" />
-        <option value="$PROJECT_DIR$/www/js/data/sessionRepository.js" />
-        <option value="$PROJECT_DIR$/www/js/calculator.js" />
-        <option value="$PROJECT_DIR$/www/js/session/session.html" />
         <option value="$PROJECT_DIR$/www/js/data/drinkTypes.js" />
         <option value="$PROJECT_DIR$/www/js/session/add-drink.html" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -79,7 +130,11 @@
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/ionic.project" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/www/js/session/drink-info.html" />
+        <option value="$PROJECT_DIR$/www/js/data/sessionRepository.js" />
+        <option value="$PROJECT_DIR$/www/js/calculator.js" />
         <option value="$PROJECT_DIR$/www/js/session/session.js" />
+        <option value="$PROJECT_DIR$/www/js/session/session.html" />
       </list>
     </option>
   </component>
@@ -143,6 +198,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drinkup.app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drinkup.app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drinkup.app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drinkup.app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drinkup.app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drinkup.app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="session" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -154,7 +263,7 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="session&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.js&#10;utils&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/utils.js&#10;index&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/index.html&#10;home&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/home/home.html&#10;menu&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/menu/menu.html&#10;db&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/db.js&#10;sessi&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.html&#10;session.js&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.js&#10;app.js&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/app.js&#10;menu.html&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/menu/menu.html" />
+    <property name="SearchEverywhereHistoryKey" value="calcul&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/calculator.js&#10;sessionrepo&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/sessionRepository.js&#10;session&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.js&#10;utils&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/utils.js&#10;index&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/index.html&#10;home&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/home/home.html&#10;menu&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/menu/menu.html&#10;db&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/db.js&#10;sessi&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.html&#10;session.js&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.js&#10;app.js&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/app.js&#10;menu.html&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/menu/menu.html" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -292,7 +401,13 @@
       <option name="project" value="LOCAL" />
       <updated>1432334902354</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixed calculation of sober time and made display of Now line conditional">
+      <created>1432466991850</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1432466991850</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -344,7 +459,8 @@
     <MESSAGE value="Added &quot;now&quot; line" />
     <MESSAGE value="Fixed &quot;now&quot; line for quieter nights" />
     <MESSAGE value="Updated general details" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated general details" />
+    <MESSAGE value="Fixed calculation of sober time and made display of Now line conditional" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed calculation of sober time and made display of Now line conditional" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -361,14 +477,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/data/profile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -605,14 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/data/sessionRepository.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24324325">
@@ -633,16 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15202703">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/calculator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18243243">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
             <element signature="e#0#44#0" expanded="false" />
           </folding>
@@ -751,14 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/session/session.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.031858407">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21283785">
@@ -775,10 +857,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/session/drink-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.333333">
+          <caret line="20" column="14" selection-start-line="5" selection-start-column="8" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/data/sessionRepository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/calculator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="59" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/session/session.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4560811">
-          <caret line="163" column="10" selection-start-line="163" selection-start-column="10" selection-end-line="163" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.7584459">
+          <caret line="206" column="18" selection-start-line="206" selection-start-column="18" selection-end-line="206" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/session/session.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46902654">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
           <folding />
         </state>
       </provider>
