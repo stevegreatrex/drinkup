@@ -98,6 +98,10 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
     min-width: 20px;
 }
 
+.stats {
+    text-align: center;
+}
+
 .stats .drinks {
     font-size: 30px;
     display: inline-block;
@@ -117,6 +121,8 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
 }
 .stats .row {
     margin-bottom: 5px;
+    position: relative;
+    display: inline-block;
 }
 .stats .stat-label {
     margin-left: 5px;
@@ -157,14 +163,17 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
 }
 
 .times .bg-logo {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 10px;
     color: #404040;
     font-size: 100px;
     z-index: -1;
 }
 
 .times .row:last-child .bg-logo {
-    float: left;
+    left: 10px;
+    right: auto;
 }
 
 .times .row:last-child .stat-label {
