@@ -15,14 +15,15 @@
 		'drinkup.data.drinkTypes',
 		'drinkup.data.sessionRepository',
 		'drinkup.data.sessionLevels',
-		'drinkup.data.profile',
+		'drinkup.data.profileRepository',
 		'drinkup.server',
 		'drinkup.utils',
 		'drinkup.calculator',
 
 		'drinkup.menu',
 		'drinkup.home',
-		'drinkup.session'
+		'drinkup.session',
+		'drinkup.profile'
 	])
 
     .run(function($ionicPlatform) {
@@ -54,6 +55,16 @@
 						content: {
 							templateUrl: 'js/home/home.html',
 							controller: 'HomeCtrl'
+						}
+					}
+				})
+
+				.state('app.profile', {
+					url: '/profile',
+					views: {
+						content: {
+							templateUrl: 'js/profile/profile.html',
+							controller: 'ProfileCtrl'
 						}
 					}
 				})

@@ -7,6 +7,7 @@
 	])
 
 		.controller('SessionCtrl', function ($scope,
+																				 $rootScope,
 																				 $stateParams,
 																				 $interval,
 																				 $ionicModal,
@@ -16,6 +17,7 @@
 																				 calculator,
 																				 drinkupUtils,
 																				 profile,
+																				 ProfileEvents,
 																				 drinkTypes,
 																				 drinkCategories,
 																				 drivingLimit) {
@@ -224,6 +226,11 @@
 
 				$scope.addDrinkModal && $scope.addDrinkModal.remove();
 				$scope.drinkInfoModal && $scope.drinkInfoModal.remove();
+			});
+
+			$rootScope.$on(ProfileEvents.updated, function(event, p) {
+				profile = p;
+				updateStats();
 			});
 		});
 }(angular));

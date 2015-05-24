@@ -15,6 +15,10 @@ input.drink-search[type=text] {
     text-align: center;
 }
 
+input.ion-autocomplete-search[type=search] {
+    color: #202020;
+}
+
 .nvtooltip {
     background-color: #505050;
     color: #c0c0c0;
@@ -30,4 +34,34 @@ input.drink-search[type=text] {
 
 .bac-chart .nv-axis line {
     stroke: #404040;
+}
+
+.profile .item {
+    border-color: transparent;
+    background-color: #303030;
+}
+
+.profile input {
+    font-size: 18px;
+}
+
+.profile .item .input-label {
+    color: #b0b0b0;
+}
+
+.profile ::-webkit-input-placeholder { font-style: italic; color: #808080 }
+
+.profile .gender {
+    display: inline-block;
+    width: calc(50% - 8px);
+}
+
+.profile .gender:first-child { margin-left: 5px; }
+.profile .gender:last-child { margin-right: 5px; }
+
+.profile .gender i.fa {
+    font-size: 35px;
+}
+.profile .gender i.radio-icon {
+    font-size: 30px;
 }
