@@ -171,3 +171,5 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
     display: block;
     text-align: right;
 }
+
+.angular-google-map-container { height: 400px; }

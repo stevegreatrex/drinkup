@@ -10,6 +10,8 @@
 		'angularMoment',
 		'nvd3',
 		'ion-autocomplete',
+		'ngCordova',
+		'uiGmapgoogle-maps',
 
 		'drinkup.data.db',
 		'drinkup.data.drinkTypes',

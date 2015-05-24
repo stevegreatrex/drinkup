@@ -19,6 +19,11 @@
 			<div class="col col-50">Calories</div>
 			<div class="col col-50">{{selectedDrink.cal | number:0}}</div>
 		</div>
+		<div ng-show="!!selectedDrink.location">
+			<ui-gmap-google-map center="selectedDrink.location" zoom="15">
+				<ui-gmap-marker coords="selectedDrink.location" idKey="selectedDrink.id"></ui-gmap-marker>
+			</ui-gmap-google-map>
+		</div>
 	</ion-content>
 	<ion-footer-bar>
 		<button class="button button-assertive" ng-click="deleteDrink(selectedDrink)">Delete</button>

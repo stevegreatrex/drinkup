@@ -1,13 +1,7 @@
-/**
- * Created by Stephen on 20/05/2015.
- */
-/**
- * Created by Stephen on 18/05/2015.
- */
 (function(angular) {
 	angular.module('drinkup.data.sessionRepository', [])
 
-		.factory('sessionRepository', function($q, $indexedDB, moment, drinkupUtils, sessionLevels) {
+		.factory('sessionRepository', function($ionicPlatform, $q, $indexedDB, $cordovaGeolocation, moment, drinkupUtils, sessionLevels) {
 			function SessionRepository() {
 			}
 
@@ -15,8 +9,10 @@
 				var defer = $q.defer();
 				storeName = storeName || 'session';
 
-				$indexedDB.openStore(storeName, function(store) {
-					defer.resolve(store);
+				$ionicPlatform.ready(function() {
+					$indexedDB.openStore(storeName, function(store) {
+						defer.resolve(store);
+					});
 				});
 
 				return defer.promise;
@@ -86,7 +82,16 @@
 					cal: serving.ml * drinkType.calPerMl
 				};
 
-				return this.getSession(sessionId)
+				return $cordovaGeolocation.getCurrentPosition({ timeout: 500 })
+					.then(function(location) {
+						if (location && location.coords) {
+							drink.location = {
+								latitude: location.coords.latitude,
+								longitude: location.coords.longitude
+							};
+						}
+						return repo.getSession(sessionId);
+					})
 					.then(function(session) {
 						if (isNaN(session.totalUnits)) session.totalUnits = 0;
 						if (isNaN(session.totalCal)) session.totalCal = 0;
