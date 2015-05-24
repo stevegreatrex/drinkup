@@ -3063,9 +3063,9 @@ a.subdued:last-child {
 .bar.bar-light.bar-footer {
     background-image: linear-gradient(180deg, #ddd, #ddd 50%, transparent 50%); }
 .bar.bar-stable {
-    border-color: #202020;
-    background-color: #202020;
-    background-image: linear-gradient(0deg, #202020, #202020 50%, transparent 50%);
+    border-color: #375a7f;
+    background-color: #375a7f;
+    background-image: linear-gradient(0deg, #375a7f, #375a7f 50%, transparent 50%);
     color: #eee; }
 .bar.bar-stable .title {
     color: #d0d0d0; }

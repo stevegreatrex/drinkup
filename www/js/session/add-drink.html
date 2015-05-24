@@ -3,11 +3,16 @@
 		<h1 class="title">One more for the road</h1>
 	</ion-header-bar>
 	<ion-content>
+		<div ng-show="!newDrink.type">
+			<button class="button button-balanced button-block" ng-click="sameAgain()" ng-show="drinks.length">
+				Same again!
+			</button>
+		</div>
 		<ion-autocomplete ng-model="newDrink.type"
 						  items-method="searchDrinks(query)"
 						  item-view-value-key="name"
 						  select-items-label="Select a drink"
-						  placeholder="Find your drink..."
+						  placeholder="Search drinks..."
 						  class="drink-search">
 		</ion-autocomplete>
 		<ion-radio ng-model="newDrink.serving" ng-repeat="serving in drinkCategories[newDrink.type.category].servings" ng-value="serving">

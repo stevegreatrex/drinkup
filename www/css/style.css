@@ -11,13 +11,15 @@ input.drink-search[type=text] {
     font-size: 32px;
     min-height: 60px;
     line-height: 50px;
-    color: #909090;
+    color: #ddd;
     text-align: center;
 }
 
 input.ion-autocomplete-search[type=search] {
     color: #202020;
 }
+
+input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
 
 .nvtooltip {
     background-color: #505050;

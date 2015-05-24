@@ -85,7 +85,8 @@
 			};
 
 			$scope.cancelAddDrinkModal = function() {
-				$scope.newDrink = {};
+				$scope.newDrink.type = null;
+				$scope.newDrink.serving = null;
 				$scope.addDrinkModal.hide()
 			};
 
