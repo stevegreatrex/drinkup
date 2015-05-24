@@ -147,7 +147,8 @@
 					});
 				}
 
-				var soberTime = moment().add(calculator.timeUntilSober($scope.bloodAlcohol)).toDate()
+				var lastDrink = dataPoints[dataPoints.length-1];
+				var soberTime = moment(lastDrink.date).add(calculator.timeUntilSober(lastDrink.bac)).toDate();
 				dataPoints.push({
 					date: soberTime,
 					bac: 0
@@ -157,17 +158,22 @@
 					bac: drivingLimit
 				});
 
-				var nowPoints = [
-					{ date: moment(), bac: 0 },
-					{ date: moment(), bac: 0.2 } //max forced line on chart
+				var data = [
+					{ key: 'Blood Alcohol', values: dataPoints },
+					{ key: 'Driving limit', values: drivingLimitPoints },
 				];
 
+				if (moment().diff(moment(lastDrink.date), 'hours', true) < 4) {
+					data.push({
+						key: 'Now', values: [
+							{date: moment(), bac: 0},
+							{date: moment(), bac: 0.2} //max forced line on chart
+						]
+					});
+				}
+
 				$scope.bacChart = {
-					data: [
-						{ key: 'Blood Alcohol', values: dataPoints },
-						{ key: 'Driving limit', values: drivingLimitPoints },
-						{ key: 'Now', values: nowPoints }
-					],
+					data: data,
 					options: {
 						chart: {
 							type: 'lineChart',
@@ -194,8 +200,10 @@
 							showYAxis: false,
 							xAxis: {
 								tickFormat: function(d) {
-									if (moment(d).isSame($scope.startDate)) return 'kick-off';
-									if (moment(d).isSame(soberTime)) return 'sober ' + d3.time.format('%H:%M')(new Date(d));
+									var dMoment = moment(d);
+									if (dMoment.isSame($scope.startDate)) return 'kick-off';
+									if (dMoment.isSame(soberTime)) return 'sober ' + d3.time.format('%H:%M')(new Date(d));
+									if (dMoment.hours() === 0 && dMoment.minutes() === 0) return dMoment.format('ddd Do');
 									return d3.time.format('%H:%M')(new Date(d));
 								}
 							}
