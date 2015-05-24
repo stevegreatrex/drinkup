@@ -109,15 +109,10 @@
 
 			function updateStats() {
 
-				var timeOfLastDrink = moment($scope.drinks.length ? $scope.drinks[0].date : null);
-				var endOfSession = (moment().diff(timeOfLastDrink, 'hours', true) < 4) ?
-					moment() : timeOfLastDrink;
-
-				var drinkingTime = moment.duration(endOfSession.diff($scope.startDate));
+				var drinkingTime = moment.duration(moment().diff($scope.startDate));
 
 				$scope.totalUnits = $scope.session.totalUnits;
 				$scope.totalCal = $scope.session.totalCal;
-				$scope.drinkingTime = drinkingTime.humanize();
 				$scope.description = sessionLevels.getLevel($scope.session.totalUnits);
 				$scope.totalDrinks = $scope.drinks.length;
 				$scope.bloodAlcohol = calculator.calculateBloodAlcohol(profile, drinkingTime, $scope.totalUnits);
