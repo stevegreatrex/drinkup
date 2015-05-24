@@ -173,3 +173,10 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
 }
 
 .angular-google-map-container { height: 400px; }
+.add-drink-spinner {
+    height: 65px;
+    text-align: center;
+    display: block;
+    padding-top: 24px;
+}
+.add-drink-spinner svg { margin: auto; }

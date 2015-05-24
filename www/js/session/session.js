@@ -70,12 +70,14 @@
 				$scope.addDrinkModal.hide();
 				if (!drinkType || !serving) { return; }
 
-				return sessionRepository.addDrink($scope.session.id, drinkType, serving)
+				$scope.addingDrink = true;
+				sessionRepository.addDrink($scope.session.id, drinkType, serving)
 					.then(function(drink) {
 						$scope.drinks.unshift(drink);
 						$scope.session.totalUnits += drink.units;
 						$scope.session.totalCal += drink.cal;
 						updateStats();
+						$scope.addingDrink = false;
 					});
 			};
 

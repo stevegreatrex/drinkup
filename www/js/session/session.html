@@ -45,10 +45,13 @@
 			</ion-slide>
 		</ion-slide-box>
 
-		<button class="button button-block button-balanced add-drink-button" ng-click="showAddDrinkModal()">
+		<button ng-show="!addingDrink" class="button button-block button-balanced add-drink-button" ng-click="showAddDrinkModal()">
 			<span ng-show="drinks.length">Have another!</span>
 			<span ng-show="!drinks.length">Get started!</span>
 		</button>
+		<ion-spinner ng-show="addingDrink" class="add-drink-spinner">
+
+		</ion-spinner>
 
 		<div class="card">
 			<ion-list>

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="957a6a53-f53f-46ae-bd5f-f9b27c91f608" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
+    <list default="true" id="957a6a53-f53f-46ae-bd5f-f9b27c91f608" name="Default" comment="Fixed google maps behaviour">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/session/session.html" afterPath="$PROJECT_DIR$/www/js/session/session.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/session/session.js" afterPath="$PROJECT_DIR$/www/js/session/session.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/data/sessionRepository.js" afterPath="$PROJECT_DIR$/www/js/data/sessionRepository.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drinkup.app.iws" />
@@ -30,18 +32,28 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-13.444445">
-                  <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
+                <state vertical-scroll-proportion="-0.7777778">
+                  <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
+          <file leaf-file-name="session.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/www/js/session/session.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.24956672">
+                  <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5247525">
-                  <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
                   <folding />
                 </state>
               </provider>
@@ -118,7 +130,7 @@
             <entry file="file://$PROJECT_DIR$/www/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="160" column="19" selection-start-line="160" selection-start-column="19" selection-end-line="160" selection-end-column="19" />
+                  <caret line="171" column="22" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -128,7 +140,7 @@
             <entry file="file://$PROJECT_DIR$/www/js/session/session.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+                  <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -137,9 +149,17 @@
           <file leaf-file-name="sessionRepository.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/www/js/data/sessionRepository.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.089108914">
-                  <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
-                  <folding />
+                <state vertical-scroll-proportion="0.8062914">
+                  <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+                  <folding>
+                    <element signature="e#611#936#0" expanded="false" />
+                    <element signature="e#1275#1976#0" expanded="false" />
+                    <element signature="e#2061#3452#0" expanded="false" />
+                    <element signature="e#2542#2724#0" expanded="false" />
+                    <element signature="e#2748#2797#0" expanded="false" />
+                    <element signature="e#2828#3445#0" expanded="false" />
+                    <element signature="e#3529#4364#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -209,17 +229,17 @@
         <option value="$PROJECT_DIR$/www/js/drinkIcon/drinkIcon.js" />
         <option value="$PROJECT_DIR$/www/js/drinkIcon/drinkIcon.html" />
         <option value="$PROJECT_DIR$/www/js/home/home.html" />
-        <option value="$PROJECT_DIR$/www/js/session/session.html" />
-        <option value="$PROJECT_DIR$/www/js/session/session.js" />
         <option value="$PROJECT_DIR$/www/css/ionic.theme.css" />
         <option value="$PROJECT_DIR$/www/js/data/drinkTypes.js" />
         <option value="$PROJECT_DIR$/www/js/directives.js" />
-        <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/www/js/session/drink-info.html" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/www/js/session/session.js" />
+        <option value="$PROJECT_DIR$/www/js/session/session.html" />
+        <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/www/js/data/sessionRepository.js" />
       </list>
     </option>
@@ -295,7 +315,7 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/index.html&#10;app.js&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/app.js&#10;sessionRepo&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/sessionRepository.js&#10;app.&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/app.js&#10;app&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/app.js&#10;drinkTypes&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/drinkTypes.js&#10;sessionRepos&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/sessionRepository.js&#10;session&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.js&#10;home&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/home/home.html&#10;style&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/css/style.css&#10;session.html&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.html&#10;profile&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/profile/profile.js&#10;index.&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/index.html&#10;calcul&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/calculator.js&#10;sessionrepo&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/sessionRepository.js&#10;utils&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/utils.js&#10;menu&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/menu/menu.html&#10;db&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/db.js&#10;sessi&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.html&#10;session.js&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.js&#10;menu.html&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/menu/menu.html" />
+    <property name="SearchEverywhereHistoryKey" value="session&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.html&#10;cal&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/calculator.js&#10;index&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/index.html&#10;app.js&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/app.js&#10;sessionRepo&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/sessionRepository.js&#10;app.&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/app.js&#10;app&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/app.js&#10;drinkTypes&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/drinkTypes.js&#10;sessionRepos&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/sessionRepository.js&#10;home&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/home/home.html&#10;style&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/css/style.css&#10;session.html&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.html&#10;profile&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/profile/profile.js&#10;index.&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/index.html&#10;calcul&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/calculator.js&#10;sessionrepo&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/sessionRepository.js&#10;utils&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/utils.js&#10;menu&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/menu/menu.html&#10;db&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/db.js&#10;sessi&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.html&#10;session.js&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.js&#10;menu.html&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/menu/menu.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -560,7 +580,13 @@
       <option name="project" value="LOCAL" />
       <updated>1432499595413</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Fixed google maps behaviour">
+      <created>1432501209413</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1432501209413</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -573,7 +599,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31385282" sideWeight="0.49578503" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31601733" sideWeight="0.49578503" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1227608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -622,7 +648,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Session start now uses first drink time (if present)&#10;Start &amp; end labels on chart are now descriptive&#10;" />
     <MESSAGE value="Working on a scrolling issue&#10;" />
     <MESSAGE value="FINALLY fixed scrolling&#10;Made the &quot;drink search&quot; a bit easier to hit&#10;Marked off a few todos" />
     <MESSAGE value="Added &quot;now&quot; line" />
@@ -647,7 +672,8 @@
     <MESSAGE value="Added GPS location for drinks" />
     <MESSAGE value="Added gmaps dependencies" />
     <MESSAGE value="Update to gmaps dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update to gmaps dependencies" />
+    <MESSAGE value="Fixed google maps behaviour" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed google maps behaviour" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -775,13 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4222973">
           <caret line="81" column="50" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/calculator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="59" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -918,14 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/session/session.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.666667">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/home/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.0">
@@ -974,14 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.444445">
-          <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/platforms/android/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1014,10 +1017,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+    <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="160" column="19" selection-start-line="160" selection-start-column="19" selection-end-line="160" selection-end-column="19" />
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7777778">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -1025,23 +1036,49 @@
     <entry file="file://$PROJECT_DIR$/www/js/session/session.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+          <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/calculator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40212765">
+          <caret line="23" column="75" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="171" column="22" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/data/sessionRepository.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.089108914">
-          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
-          <folding />
+        <state vertical-scroll-proportion="0.8062914">
+          <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+          <folding>
+            <element signature="e#611#936#0" expanded="false" />
+            <element signature="e#1275#1976#0" expanded="false" />
+            <element signature="e#2061#3452#0" expanded="false" />
+            <element signature="e#2542#2724#0" expanded="false" />
+            <element signature="e#2748#2797#0" expanded="false" />
+            <element signature="e#2828#3445#0" expanded="false" />
+            <element signature="e#3529#4364#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
+    <entry file="file://$PROJECT_DIR$/www/js/session/session.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5247525">
-          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.24956672">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
           <folding />
         </state>
       </provider>
