@@ -67,3 +67,73 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
 .profile .gender i.radio-icon {
     font-size: 30px;
 }
+
+.date {
+    float: right;
+    color: #404040;
+}
+
+.session-list a.item-content {
+    padding-right: 20px;
+}
+
+.logo {
+    font-size: 120px;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.drink-icon {
+    display: inline-block;
+    text-align: center;
+    min-width: 20px;
+}
+
+.stats .drinks {
+    font-size: 30px;
+}
+.stats .drinks .drink-icon,
+.stats .blood-alcohol-icon {
+    margin-right: 5px;
+    color: #909090;
+    text-align: center;
+    display: inline-block;
+}
+.stats .blood-alcohol-icon {
+    font-size: 30px;
+    line-height: 40px;
+    margin-left: 10px;
+    display:inline-block;
+}
+.stats .stat-label {
+    margin-left: 5px;
+    font-size: 50px;
+    line-height:35px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.stats .stat-label .stat {
+    display: inline-block;
+    min-width: 2em;
+    white-space: nowrap;
+}
+.stats .stat-label .sub-label {
+    font-size: 14px;
+    color: #909090;
+    font-weight: normal;
+    margin-left: 0;
+    vertical-align: top;
+}
+
+.slider {
+    padding-bottom: 20px; /* to account for pager dots */
+}
+.slider-pager {
+    bottom: 0;
+}
+
+.add-drink-button {
+    margin-top: 0;
+}

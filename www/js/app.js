@@ -20,6 +20,10 @@
 		'drinkup.utils',
 		'drinkup.calculator',
 
+		'drinkup.directives',
+		'drinkup.directives.drinkIcon',
+		'drinkup.filters',
+
 		'drinkup.menu',
 		'drinkup.home',
 		'drinkup.session',

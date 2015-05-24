@@ -1,40 +1,51 @@
 <ion-view view-title="{{description}}">
 	<ion-scroll direction="y">
-		<div class="stats" ng-show="drinks.length">
-			<div class="row">
-				<div class="col col-50">Total Drinks</div>
-				<div class="col col-50">{{totalDrinks}}</div>
-			</div>
-			<div class="row">
-				<div class="col col-50">Total Units</div>
-				<div class="col col-50">{{totalUnits | number:1}}</div>
-			</div>
-			<div class="row">
-				<div class="col col-50">Total Calories</div>
-				<div class="col col-50">{{totalCal | number:0}}</div>
-			</div>
-			<div class="row">
-				<div class="col col-50">Current Blood Alcohol</div>
-				<div class="col col-50">{{bloodAlcohol | number:3}}</div>
-			</div>
-			<div class="row">
-				<div class="col col-50">Sober</div>
-				<div class="col col-50" ng-click="showActualTime = !showActualTime">
-					<span ng-show="!showActualTime">{{soberTime.fromNow()}}</span>
-					<span ng-show="showActualTime">{{soberTime | amDateFormat: 'H:MM MMM Do'}}</span>
+		<ion-slide-box>
+			<ion-slide>
+				<div class="stats" ng-show="drinks.length">
+					<div class="row drinks">
+						<drink-icon ng-repeat="drink in drinks | reverse" drink-type="drink.drinkType"></drink-icon>
+						<label class="stat-label">{{totalDrinks}} <span class="sub-label">drinks</span></label>
+					</div>
+					<div class="row">
+						<label class="stat-label"><span class="stat">{{totalUnits | number:1}}</span> <span class="sub-label">units</span></label>
+						<img-repeat src="img/droplet.png" count="totalUnits" height="15" size="10"></img-repeat>
+					</div>
+					<div class="row">
+						<img-repeat src="img/burger.png" count="burgers" size="30"></img-repeat>
+						<label class="stat-label"><span class="stat">{{totalCal | number:0}}</span> <span class="sub-label">calories</span></label>
+					</div>
+					<div class="row">
+						<label class="stat-label"><span class="stat">{{bloodAlcohol | number:3}}</span> <span class="sub-label">blood alcohol</span></label>
+						<i class="fa fa-dashboard blood-alcohol-icon"></i>
+					</div>
 				</div>
+			</ion-slide>
 
-			</div>
-			<div class="row">
-				<div class="col col-50">Can drive</div>
-				<div class="col col-50" ng-click="showActualTime = !showActualTime">
-					<span ng-show="!showActualTime">{{drivingTime.fromNow()}}</span>
-					<span ng-show="showActualTime">{{drivingTime | amDateFormat: 'H:MM MMM Do'}}</span>
+			<ion-slide>
+				<div class="row">
+					<div class="col col-50">Sober</div>
+					<div class="col col-50" ng-click="showActualTime = !showActualTime">
+						<span ng-show="!showActualTime">{{soberTime.fromNow()}}</span>
+						<span ng-show="showActualTime">{{soberTime | amDateFormat: 'H:MM MMM Do'}}</span>
+					</div>
+
 				</div>
-			</div>
-		</div>
-		<nvd3 class="bac-chart" data="bacChart.data" options="bacChart.options"></nvd3>
-		<button class="button button-block button-balanced" ng-click="showAddDrinkModal()">
+				<div class="row">
+					<div class="col col-50">Can drive</div>
+					<div class="col col-50" ng-click="showActualTime = !showActualTime">
+						<span ng-show="!showActualTime">{{drivingTime.fromNow()}}</span>
+						<span ng-show="showActualTime">{{drivingTime | amDateFormat: 'H:MM MMM Do'}}</span>
+					</div>
+				</div>
+			</ion-slide>
+
+			<ion-slide>
+				<nvd3 class="bac-chart" data="bacChart.data" options="bacChart.options"></nvd3>
+			</ion-slide>
+		</ion-slide-box>
+
+		<button class="button button-block button-balanced add-drink-button" ng-click="showAddDrinkModal()">
 			<span ng-show="drinks.length">Have another!</span>
 			<span ng-show="!drinks.length">Get started!</span>
 		</button>
@@ -42,8 +53,9 @@
 		<div class="card">
 			<ion-list>
 				<ion-item ng-repeat="drink in drinks" ng-click="showDrinkInfoModal(drink)">
+					<drink-icon drink-type="drink.drinkType"></drink-icon>
 					<span>{{drink.drinkType.name}}</span>
-					<span am-time-ago="drink.date"></span>
+					<span class="date" am-time-ago="drink.date"></span>
 				</ion-item>
 			</ion-list>
 		</div>

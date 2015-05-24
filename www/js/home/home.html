@@ -1,13 +1,14 @@
 <ion-view view-title="DrinkUp">
 	<ion-scroll direction="y">
+		<drink-icon drink-type="{ category: 'beer' }" class="logo"></drink-icon>
 		<button ng-click="startSession()" class="button button-block button-large button-balanced">
 			Go Drinking!
 		</button>
-		<div class="card">
+		<div class="card session-list">
 			<ion-list>
 				<ion-item ng-repeat="session in sessions" href="#/app/session/{{session.id}}">
 					<span>{{session.description}}</span>
-					<span am-time-ago="session.startDate"></span>
+					<span class="date" am-time-ago="session.startDate"></span>
 				</ion-item>
 			</ion-list>
 		</div>

@@ -121,6 +121,8 @@
 				$scope.description = sessionLevels.getLevel($scope.session.totalUnits);
 				$scope.totalDrinks = $scope.drinks.length;
 				$scope.bloodAlcohol = calculator.calculateBloodAlcohol(profile, drinkingTime, $scope.totalUnits);
+
+				$scope.burgers = $scope.totalCal / 234; //234 calories in a big mac
 				updateChart();
 			}
 
