@@ -51,7 +51,7 @@
 			}
 		})
 
-		.constant('drinkTypes', [
+		.constant('drinkTypesData', [
 			{
 				name: '1554 Enlightened Black Ale',
 				abv: 5.6,
@@ -2582,14 +2582,14 @@
 			{
 				name: 'Myers Frozen Pina Colada',
 				abv: 13,
-				category: 'wine',
+				category: 'cocktail',
 				calPerMl: 1.6893631312869342,
 				id: 362
 			},
 			{
 				name: 'Myers Frozen Strawberry Daiquiri',
 				abv: 13,
-				category: 'wine',
+				category: 'cocktail',
 				calPerMl: 1.5274658312052696,
 				id: 363
 			},
@@ -3814,35 +3814,35 @@
 			{
 				name: 'Vodka and Diet Coke',
 				abv: 13.3,
-				category: 'beer',
+				category: 'cocktail',
 				calPerMl: 0.7566939025556059,
 				id: 538
 			},
 			{
 				name: 'Vodka and Red Bull',
 				abv: 13.3,
-				category: 'beer',
+				category: 'cocktail',
 				calPerMl: 1.073449489671906,
 				id: 539
 			},
 			{
 				name: 'Vodka and Red Bull Sugar Free',
 				abv: 13.3,
-				category: 'beer',
+				category: 'cocktail',
 				calPerMl: 0.7860231235848929,
 				id: 540
 			},
 			{
 				name: 'Vodka and Rockstar',
 				abv: 13.3,
-				category: 'beer',
+				category: 'cocktail',
 				calPerMl: 1.1702359190685532,
 				id: 541
 			},
 			{
 				name: 'Vodka and Rockstar Diet',
 				abv: 13.3,
-				category: 'beer',
+				category: 'cocktail',
 				calPerMl: 0.7889560456878216,
 				id: 542
 			},
@@ -3870,7 +3870,7 @@
 			{
 				name: 'White Russian',
 				abv: 17.7,
-				category: 'wine',
+				category: 'cocktail',
 				calPerMl: 2.16097700543787,
 				id: 546
 			},
@@ -3985,6 +3985,70 @@
 				category: 'beer',
 				calPerMl: 0.6775050057765308,
 				id: 562
+			},
+			{
+				name: 'White Wine (generic)',
+				abv: 14.4,
+				category: 'wine',
+				calPerMl: 1.0980860353365072,
+				id: 563
+			},
+			{
+				name: 'Red Wine (generic)',
+				abv: 13.9,
+				category: 'wine',
+				calPerMl: 1.0699299831483915,
+				id: 564
+			},
+			{
+				name: 'Snakebite',
+				abv: 4.85,
+				category: 'beer',
+				calPerMl: 1.475324675324675,
+				id: 565
+			},
+			{
+				name: 'Glenmorangie',
+				abv: 40,
+				category: 'shot',
+				calPerMl: 2.4,
+				id: 566
+			},
+			{
+				name: 'Desperado',
+				abv: 5.9,
+				category: 'beer',
+				calPerMl: 0.59,
+				id: 567
+			},
+			{
+				name: 'Sol',
+				abv: 4.5,
+				category: 'beer',
+				calPerMl: 0.3472,
+				id: 568
+			},
+			{
+				name: 'Daiquiri',
+				abv: 13,
+				category: 'cocktail',
+				calPerMl: 1.5274658312052696,
+				id: 569
+			},
+			{
+				name: 'Tia Maria',
+				abv: 26.5,
+				category: 'shot',
+				calPerMl: 3,
+				id: 570
 			}
-		]);
+		])
+
+		.factory('drinkTypes', function(drinkTypesData) {
+			drinkTypesData.sort(function(a,b) {
+				return a.name < b.name ? -1 : 1;
+			});
+
+			return drinkTypesData;
+		});
 }(angular));
