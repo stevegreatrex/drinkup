@@ -26,7 +26,7 @@
 			$scope.startSession = function() {
 				sessionRepository.addSession()
 					.then(function(session) {
-						$location.path('/app/session/' + session.id);
+						$location.path('app/session/' + session.id);
 					});
 
 				load();

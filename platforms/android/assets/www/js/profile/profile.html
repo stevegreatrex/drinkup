@@ -1,0 +1,22 @@
+<ion-view view-title="My Profile">
+	<form class="profile" name="profileForm" ng-submit="save()">
+		<ion-radio class="gender" ng-model="profile.gender" value="male">
+			<i class="fa fa-male"></i>
+		</ion-radio>
+		<ion-radio class="gender" ng-model="profile.gender" value="female">
+			<i class="fa fa-female"></i>
+		</ion-radio>
+		<div class="list">
+			<label class="item item-input">
+				<span class="input-label">Name</span>
+				<input type="text" placeholder="A Drinker" name="name" ng-model="profile.name">
+			</label>
+			<label class="item item-input">
+				<span class="input-label">Weight (kg)</span>
+				<input type="number" required placeholder="75" name="weight" ng-model="profile.weight">
+			</label>
+		</div>
+		<input ng-disabled="profileForm.$invalid || profileForm.$pristine" class="button button-positive button-block" type="submit" value="Save Changes"/>
+
+	</form>
+</ion-view>

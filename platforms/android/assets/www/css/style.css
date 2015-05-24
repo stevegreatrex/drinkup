@@ -1,0 +1,175 @@
+ion-scroll[direction=y] {
+    height: 100vh;
+}
+
+.scroll {
+    padding-bottom: 80px;
+}
+
+input.drink-search[type=text] {
+    width: 100%;
+    font-size: 32px;
+    min-height: 60px;
+    line-height: 50px;
+    color: #ddd;
+    text-align: center;
+}
+
+input.ion-autocomplete-search[type=search] {
+    color: #202020;
+}
+
+input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
+
+.nvtooltip {
+    background-color: #505050;
+    color: #c0c0c0;
+}
+
+.nv-legend-text {
+    fill: #c0c0c0;
+}
+
+.bac-chart .nv-axis text {
+    fill: #a0a0a0
+}
+
+.bac-chart .nv-axis line {
+    stroke: #404040;
+}
+
+.profile .item {
+    border-color: transparent;
+    background-color: #303030;
+}
+
+.profile input {
+    font-size: 18px;
+}
+
+.profile .item .input-label {
+    color: #b0b0b0;
+}
+
+.profile ::-webkit-input-placeholder { font-style: italic; color: #808080 }
+
+.profile .gender {
+    display: inline-block;
+    width: calc(50% - 8px);
+}
+
+.profile .gender:first-child { margin-left: 5px; }
+.profile .gender:last-child { margin-right: 5px; }
+
+.profile .gender i.fa {
+    font-size: 35px;
+}
+.profile .gender i.radio-icon {
+    font-size: 30px;
+}
+
+.date {
+    float: right;
+    color: #404040;
+}
+
+.session-list a.item-content {
+    padding-right: 20px;
+}
+
+.logo {
+    font-size: 120px;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.logo .small {
+    font-size: 60px;
+    display: inline-block;
+    margin-bottom:30px;
+    vertical-align: middle;
+}
+
+.drink-icon {
+    display: inline-block;
+    text-align: center;
+    min-width: 20px;
+}
+
+.stats .drinks {
+    font-size: 30px;
+    display: inline-block;
+}
+.stats .drinks .drink-icon,
+.stats .blood-alcohol-icon {
+    margin-right: 5px;
+    color: #909090;
+    text-align: center;
+    display: inline-block;
+}
+.stats .blood-alcohol-icon {
+    font-size: 30px;
+    line-height: 40px;
+    margin-left: 10px;
+    display:inline-block;
+}
+.stats .row {
+    margin-bottom: 5px;
+}
+.stats .stat-label {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 50px;
+    line-height:40px;
+    font-weight: bold;
+}
+.stats .stat-label .stat {
+    display: inline-block;
+    white-space: nowrap;
+}
+.stats .stat-label .sub-label {
+    font-size: 14px;
+    color: #909090;
+    font-weight: normal;
+    margin-left: 0;
+    vertical-align: top;
+}
+
+.stats img-repeat {
+    z-index: -1;
+}
+
+.stats.times .stat-label .stat {
+    white-space: pre-line;
+}
+
+.slider {
+    padding-bottom: 20px; /* to account for pager dots */
+}
+.slider-pager {
+    bottom: 0;
+}
+
+.add-drink-button {
+    margin-top: 0;
+}
+
+.times .bg-logo {
+    float: right;
+    color: #404040;
+    font-size: 100px;
+    z-index: -1;
+}
+
+.times .row:last-child .bg-logo {
+    float: left;
+}
+
+.times .row:last-child .stat-label {
+    display: block;
+    text-align: right;
+}
+
+.angular-google-map-container { height: 400px; }

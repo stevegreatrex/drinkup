@@ -1,0 +1,32 @@
+<ion-modal-view>
+	<ion-header-bar>
+		<h1 class="title">{{selectedDrink.drinkType.name}}</h1>
+	</ion-header-bar>
+	<ion-content>
+		<div class="row">
+			<div class="col col-50">Size</div>
+			<div class="col col-50">{{selectedDrink.serving.name}}</div>
+		</div>
+		<div class="row">
+			<div class="col col-50">Started at</div>
+			<div class="col col-50">{{selectedDrink.date | amDateFormat:'HH:mm'}}</div>
+		</div>
+		<div class="row">
+			<div class="col col-50">Units</div>
+			<div class="col col-50">{{selectedDrink.units | number:1}}</div>
+		</div>
+		<div class="row">
+			<div class="col col-50">Calories</div>
+			<div class="col col-50">{{selectedDrink.cal | number:0}}</div>
+		</div>
+		<div ng-show="!!selectedDrink.location">
+			<ui-gmap-google-map center="selectedDrink.location" zoom="15">
+				<ui-gmap-marker coords="selectedDrink.location" idKey="selectedDrink.id"></ui-gmap-marker>
+			</ui-gmap-google-map>
+		</div>
+	</ion-content>
+	<ion-footer-bar>
+		<button class="button button-assertive" ng-click="deleteDrink(selectedDrink)">Delete</button>
+		<button class="button button-positive" ng-click="drinkInfoModal.hide()">Done</button>
+	</ion-footer-bar>
+</ion-modal-view>
