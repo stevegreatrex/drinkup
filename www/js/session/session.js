@@ -165,7 +165,7 @@
 					{ key: 'Driving limit', values: drivingLimitPoints }
 				];
 
-				if (moment().diff(moment(lastDrink.date), 'hours', true) < 4) {
+				if (moment().isBefore($scope.soberTime)) {
 					data.push({
 						key: 'Now', values: [
 							{date: moment(), bac: 0},

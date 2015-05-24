@@ -18,11 +18,17 @@
 		</div>
 		<div class="row">
 			<div class="col col-50">Sober</div>
-			<div class="col col-50" title="{{soberTime | amDateFormat: 'HH:MM MMM Do'}}">{{soberTime.fromNow()}}</div>
+			<div class="col col-50" ng-click="showActualTime = !showActualTime">
+				<span ng-show="!showActualTime">{{soberTime.fromNow()}}</span>
+				<span ng-show="showActualTime">{{soberTime | amDateFormat: 'H:MM MMM Do'}}</span>
+			</div>
 		</div>
 		<div class="row">
 			<div class="col col-50">Can drive</div>
-			<div class="col col-50" title="{{drivingTime | amDateFormat: 'HH:MM MMM Do'}}">{{drivingTime.fromNow()}}</div>
+			<div class="col col-50" ng-click="showActualTime = !showActualTime">
+				<span ng-show="!showActualTime">{{drivingTime.fromNow()}}</span>
+				<span ng-show="showActualTime">{{drivingTime | amDateFormat: 'H:MM MMM Do'}}</span>
+			</div>
 		</div>
 
 		<nvd3 data="bacChart.data" options="bacChart.options"></nvd3>
