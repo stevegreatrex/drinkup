@@ -100,6 +100,7 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
 
 .stats .drinks {
     font-size: 30px;
+    display: inline-block;
 }
 .stats .drinks .drink-icon,
 .stats .blood-alcohol-icon {
@@ -126,7 +127,6 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
 }
 .stats .stat-label .stat {
     display: inline-block;
-    /*min-width: 2em;*/
     white-space: nowrap;
 }
 .stats .stat-label .sub-label {
@@ -135,6 +135,10 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
     font-weight: normal;
     margin-left: 0;
     vertical-align: top;
+}
+
+.stats img-repeat {
+    z-index: -1;
 }
 
 .stats.times .stat-label .stat {
