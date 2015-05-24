@@ -137,6 +137,10 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
     vertical-align: top;
 }
 
+.stats.times .stat-label .stat {
+    white-space: pre-line;
+}
+
 .slider {
     padding-bottom: 20px; /* to account for pager dots */
 }
@@ -146,4 +150,20 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
 
 .add-drink-button {
     margin-top: 0;
+}
+
+.times .bg-logo {
+    float: right;
+    color: #404040;
+    font-size: 100px;
+    z-index: -1;
+}
+
+.times .row:last-child .bg-logo {
+    float: left;
+}
+
+.times .row:last-child .stat-label {
+    display: block;
+    text-align: right;
 }

@@ -22,19 +22,20 @@
 			</ion-slide>
 
 			<ion-slide>
-				<div class="row">
-					<div class="col col-50">Sober</div>
-					<div class="col col-50" ng-click="showActualTime = !showActualTime">
-						<span ng-show="!showActualTime">{{soberTime.fromNow()}}</span>
-						<span ng-show="showActualTime">{{soberTime | amDateFormat: 'H:MM MMM Do'}}</span>
+				<div class="stats times">
+					<div class="row">
+						<label class="stat-label">
+							<span class="stat">sober {{soberTime.fromNow()}}</span>
+							<span class="sub-label">at {{soberTime | amDateFormat: 'H:MM MMM Do'}}</span>
+						</label>
+						<i class="fa fa-star bg-logo"></i>
 					</div>
-
-				</div>
-				<div class="row">
-					<div class="col col-50">Can drive</div>
-					<div class="col col-50" ng-click="showActualTime = !showActualTime">
-						<span ng-show="!showActualTime">{{drivingTime.fromNow()}}</span>
-						<span ng-show="showActualTime">{{drivingTime | amDateFormat: 'H:MM MMM Do'}}</span>
+					<div class="row">
+						<i class="fa fa-car bg-logo"></i>
+						<label class="stat-label">
+							<span class="stat">drive {{drivingTime.fromNow()}}</span>
+							<span class="sub-label">at {{drivingTime | amDateFormat: 'H:MM MMM Do'}}</span>
+						</label>
 					</div>
 				</div>
 			</ion-slide>

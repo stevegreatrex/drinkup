@@ -142,14 +142,18 @@
 				});
 
 
+				var maxBac = 0.2;
 				for (var i = $scope.drinks.length-1; i >= 0; i--) {
 					var drink = $scope.drinks[i];
 					var drinkTime = moment(drink.date);
 					var drinkingTime = moment.duration(drinkTime.diff($scope.startDate));
 					totalUnits += drink.units;
+					var bac = calculator.calculateBloodAlcohol(profile, drinkingTime, totalUnits);
+					if (bac > maxBac) maxBac = bac;
+
 					dataPoints.push({
 						date: drinkTime.toDate(),
-						bac: calculator.calculateBloodAlcohol(profile, drinkingTime, totalUnits)
+						bac: bac
 					});
 				}
 
@@ -174,7 +178,7 @@
 					data.push({
 						key: 'Now', values: [
 							{date: moment(), bac: 0},
-							{date: moment(), bac: 0.2} //max forced line on chart
+							{date: moment(), bac: maxBac}
 						]
 					});
 				}
