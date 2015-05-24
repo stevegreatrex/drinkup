@@ -57,6 +57,8 @@
 						return store.find(sessionId);
 					})
 					.then(function(session) {
+						if (isNaN(session.totalUnits)) session.totalUnits = 0;
+						if (isNaN(session.totalCal)) session.totalCal = 0;
 						return repo._openStore('drink')
 							.then(function(drinkStore) {
 								return drinkStore.findWhere({
