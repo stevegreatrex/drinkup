@@ -19,6 +19,9 @@
 			<div class="col col-50">Calories</div>
 			<div class="col col-50">{{selectedDrink.cal | number:0}}</div>
 		</div>
+		<button class="button button-balanced button-block" ng-click="sameAgain()" ng-show="drinks.length">
+			Same again!
+		</button>
 	</ion-content>
 	<ion-footer-bar>
 		<button class="button button-assertive" ng-click="deleteDrink(selectedDrink)">Delete</button>

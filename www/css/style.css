@@ -3,7 +3,6 @@ ion-scroll[direction=y] {
 }
 
 .scroll {
-
     padding-bottom: 80px;
 }
 
@@ -12,4 +11,21 @@ input.drink-search[type=text] {
     font-size: 32px;
     height: 50px;
     line-height: 40px;
+}
+
+.nvtooltip {
+    background-color: #505050;
+    color: #c0c0c0;
+}
+
+.nv-legend-text {
+    fill: #c0c0c0;
+}
+
+.bac-chart .nv-axis text {
+    fill: #a0a0a0
+}
+
+.bac-chart .nv-axis line {
+    stroke: #404040;
 }

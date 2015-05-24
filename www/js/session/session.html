@@ -22,6 +22,7 @@
 				<span ng-show="!showActualTime">{{soberTime.fromNow()}}</span>
 				<span ng-show="showActualTime">{{soberTime | amDateFormat: 'H:MM MMM Do'}}</span>
 			</div>
+
 		</div>
 		<div class="row">
 			<div class="col col-50">Can drive</div>
@@ -31,16 +32,13 @@
 			</div>
 		</div>
 
-		<nvd3 data="bacChart.data" options="bacChart.options"></nvd3>
+		<nvd3 class="bac-chart" data="bacChart.data" options="bacChart.options"></nvd3>
 
-		<button class="button button-block" ng-click="showAddDrinkModal()">
+		<button class="button button-block button-balanced" ng-click="showAddDrinkModal()">
 			<span ng-show="drinks.length">Have another!</span>
 			<span ng-show="!drinks.length">Get started!</span>
 		</button>
 
-		<button class="button button-block" ng-click="sameAgain()" ng-show="drinks.length">
-			Same again!
-		</button>
 		<div class="card">
 			<ion-list>
 				<ion-item ng-repeat="drink in drinks" ng-click="showDrinkInfoModal(drink)">
