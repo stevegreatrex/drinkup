@@ -74,7 +74,7 @@
 								});
 							})
 							.then(function(result) {
-								var drinks = result.docs;
+								var drinks = result.docs.map(function(d) { d.id = d._id; return d; });
 								session.totalUnits = session.totalUnits || 0;
 								session.totalCal = session.totalCal || 0;
 								session.drinks = drinkupUtils.sortByReverseDate(drinks || [], 'date');
