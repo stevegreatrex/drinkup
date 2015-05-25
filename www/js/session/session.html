@@ -2,7 +2,7 @@
 	<ion-scroll direction="y">
 		<ion-slide-box>
 			<ion-slide>
-				<div class="stats">
+				<div class="stats" ng-show="!!drinks.length">
 					<div class="row drinks">
 						<drink-icon ng-repeat="drink in drinks | reverse" drink-type="drink.drinkType"></drink-icon>
 						<label class="stat-label">{{totalDrinks}} <span class="sub-label">drinks</span></label>
@@ -19,10 +19,15 @@
 						<label class="stat-label"><span class="stat">{{bloodAlcohol | number:3}}</span> <span class="sub-label">blood alcohol</span></label>
 					</div>
 				</div>
+				<div ng-show="!drinks.length" class="placeholder">
+					<h2>Nothing to see here</h2>
+					<h3>Try adding a drink below</h3>
+				</div>
+
 			</ion-slide>
 
 			<ion-slide>
-				<div class="stats times">
+				<div class="stats times" ng-show="!!drinks.length">
 					<div class="row">
 						<label class="stat-label">
 							<span class="stat">100% sober {{soberTime.fromNow()}}</span>
@@ -37,6 +42,10 @@
 							<span class="sub-label">at {{drivingTime | amDateFormat: 'H:MM MMM Do'}}</span>
 						</label>
 					</div>
+				</div>
+				<div ng-show="!drinks.length" class="placeholder">
+					<h2>Nothing to see here</h2>
+					<h3>Try adding a drink below</h3>
 				</div>
 			</ion-slide>
 

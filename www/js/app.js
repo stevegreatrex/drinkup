@@ -7,6 +7,7 @@
   angular.module('drinkup', [
 		'ionic',
 		'indexedDB',
+		'pouchdb',
 		'angularMoment',
 		'nvd3',
 		'ion-autocomplete',

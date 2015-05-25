@@ -11,6 +11,8 @@
     "ion-autocomplete": "~0.2.1",
     "fontawesome": "~4.3.0",
     "angular-nvd3": "~0.1.1",
-    "angular-google-maps": "~2.1.1"
+    "angular-google-maps": "~2.1.1",
+    "angular-pouchdb": "~2.1.0",
+    "pouchdb-find": "~0.3.4"
   }
 }

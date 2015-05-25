@@ -189,3 +189,21 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
     padding-top: 24px;
 }
 .add-drink-spinner svg { margin: auto; }
+
+.platform-ios .slider {
+    margin-top:20px;
+}
+
+.placeholder {
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.placeholder h2 {
+    color: #707070;
+}
+.placeholder h3 {
+    color: #606060;
+    font-size: 14px;
+}
