@@ -142,9 +142,9 @@
 
 				return this._openStore('drink')
 					.then(function(drinkStore) {
-						return drinkStore.find(drinkId)
+						return drinkStore.get(drinkId)
 							.then(function (drink) {
-								return drinkStore.delete(drinkId)
+								return drinkStore.remove(drink)
 									.then(function() {
 										return repo.getSession(sessionId);
 									})
