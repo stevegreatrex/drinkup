@@ -99,7 +99,7 @@
 
 				var getLocation = $q.defer();
 
-				$cordovaGeolocation.getCurrentPosition()
+				$cordovaGeolocation.getCurrentPosition({ timeout: 3000 })
 					.then(getLocation.resolve, getLocation.resolve);
 
 				return getLocation.promise
