@@ -7,7 +7,7 @@
 		'drinkup.data.sessionRepository'
 	])
 
-		.controller('HomeCtrl', function ($scope, $location, sessionRepository) {
+		.controller('HomeCtrl', function ($scope, $state, $location, $ionicModal, sessionRepository) {
 
 			//reload the data if changing to home
 			$scope.$on('$stateChangeSuccess', function(event, toState) {
@@ -15,6 +15,21 @@
 					load();
 				}
 			});
+
+			$ionicModal.fromTemplateUrl('js/home/disclaimer.html', {
+				scope: $scope
+			}).then(function(disclaimer) {
+				$scope.disclaimerModal = disclaimer;
+				if (!localStorage.getItem('disclaimer')) {
+					disclaimer.show();
+				}
+			});
+
+			$scope.acceptDisclaimer = function(goToProfile) {
+				localStorage.setItem('disclaimer', true);
+				$scope.disclaimerModal.hide();
+				goToProfile && $state.go('app.profile');
+			};
 
 			function load() {
 				sessionRepository.getAllSessions()
@@ -31,5 +46,9 @@
 
 				load();
 			};
+
+			$scope.$on('$destroy', function() {
+				$scope.disclaimerModal && $scope.disclaimerModal.remove();
+			});
 		});
 }(angular));
