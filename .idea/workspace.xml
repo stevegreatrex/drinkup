@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="957a6a53-f53f-46ae-bd5f-f9b27c91f608" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/badgeCalculator.js" afterPath="$PROJECT_DIR$/www/js/badgeCalculator.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/session/session.html" afterPath="$PROJECT_DIR$/www/js/session/session.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/session/session.js" afterPath="$PROJECT_DIR$/www/js/session/session.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drinkup.app.iws" />
@@ -29,11 +26,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="session.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="session.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/www/js/session/session.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.740741">
-                  <caret line="61" column="57" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
+                <state vertical-scroll-proportion="0.25259516">
+                  <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
@@ -79,11 +76,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="badgeCalculator.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="badgeCalculator.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/js/badgeCalculator.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.43471074">
-                  <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -126,8 +123,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/www/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.46446282">
-                  <caret line="212" column="22" selection-start-line="212" selection-start-column="22" selection-end-line="212" selection-end-column="22" />
+                <state vertical-scroll-proportion="0.43471074">
+                  <caret line="211" column="23" selection-start-line="211" selection-start-column="23" selection-end-line="211" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -607,7 +604,13 @@
       <option name="project" value="LOCAL" />
       <updated>1432658557620</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Added some UI for badges">
+      <created>1432660304736</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1432660304736</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -669,7 +672,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Fixed calculation of sober time and made display of Now line conditional" />
     <MESSAGE value="More useful session stats" />
     <MESSAGE value="Fixed 'now' line and added ability to show date" />
     <MESSAGE value="Added dark theme" />
@@ -694,7 +696,8 @@
     <MESSAGE value="Updated app name" />
     <MESSAGE value="Center-aligned stats for better appearance" />
     <MESSAGE value="Added framework for badges" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added framework for badges" />
+    <MESSAGE value="Added some UI for badges" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some UI for badges" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1073,26 +1076,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+    <entry file="file://$PROJECT_DIR$/www/js/badgeCalculator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46446282">
-          <caret line="212" column="22" selection-start-line="212" selection-start-column="22" selection-end-line="212" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/session/session.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.740741">
-          <caret line="61" column="57" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.25259516">
+          <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/badgeCalculator.js">
+    <entry file="file://$PROJECT_DIR$/www/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43471074">
-          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+          <caret line="211" column="23" selection-start-line="211" selection-start-column="23" selection-end-line="211" selection-end-column="23" />
           <folding />
         </state>
       </provider>
