@@ -52,6 +52,18 @@
 			<ion-slide>
 				<nvd3 class="bac-chart" data="bacChart.data" options="bacChart.options"></nvd3>
 			</ion-slide>
+
+			<ion-slide>
+				<div ng-show="!bottleCaps.length" class="placeholder">
+					<h2>No bottle caps yet!</h2>
+					<h3>Earn bottle caps for your drinking exploits</h3>
+				</div>
+				<div class="bottle-cap-container">
+					<div ng-repeat="bottleCap in bottleCaps" class="bottle-cap" data-bottle-cap-level="{{bottleCap.level}}" ng-click="showBottleCapModal(bottleCap)">
+						<i class="fa fa-trophy"></i> {{bottleCap.name}}
+					</div>
+				</div>
+			</ion-slide>
 		</ion-slide-box>
 
 		<button ng-show="!addingDrink" class="button button-block button-balanced add-drink-button" ng-click="showAddDrinkModal()">

@@ -3,7 +3,13 @@
 		'pouchdb'
 	])
 
-		.factory('sessionRepository', function($ionicPlatform, $q, pouchDB, $cordovaGeolocation, moment, drinkupUtils, sessionLevels) {
+		.constant('SessionEvents', {
+			drinkAdded: 'drinkup.session.drinkAdded',
+			drinkRemoved: 'drinkup.session.drinkRemoved',
+			bottleCapAdded: 'drinkup.session.bottleCapAdded'
+		})
+
+		.factory('sessionRepository', function($rootScope, $ionicPlatform, $q, pouchDB, $cordovaGeolocation, moment, drinkupUtils, sessionLevels, SessionEvents) {
 			function SessionRepository() {
 			}
 
@@ -80,8 +86,6 @@
 								session.drinks = drinkupUtils.sortByReverseDate(drinks || [], 'date');
 								return session;
 							});
-					}, function(err) {
-						debugger;
 					});
 			};
 
@@ -121,6 +125,9 @@
 						session.totalCal += drink.cal;
 						session.description = sessionLevels.getLevel(session.totalUnits);
 
+						session.drinks.push(drink);
+						$rootScope.$broadcast(SessionEvents.drinkAdded, session, drink);
+
 						return repo._openStore('drink')
 							.then(function(drinkStore) {
 								drinkStore.post(drink);
@@ -149,11 +156,13 @@
 										return repo.getSession(sessionId);
 									})
 									.then(function (session) {
-										session.totalUnits = 0 + session.totalUnits - drink.units;
+										session.totalUnits = session.totalUnits - drink.units;
 										if (session.totalUnits < 0) session.totalUnits = 0;
 										session.totalCal = 0 + session.totalCal - drink.cal;
 										if (session.totalCal < 0) session.totalCal = 0;
 										session.description = sessionLevels.getLevel(session.totalUnits);
+
+										$rootScope.$broadcast(SessionEvents.drinkRemoved, session, drink);
 
 										return repo._openStore()
 											.then(function (sessionStore) {

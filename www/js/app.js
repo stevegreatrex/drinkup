@@ -22,6 +22,7 @@
 		'drinkup.server',
 		'drinkup.utils',
 		'drinkup.calculator',
+		'drinkup.bottleCapCalculator',
 
 		'drinkup.directives',
 		'drinkup.directives.drinkIcon',
