@@ -6,7 +6,7 @@
 		.constant('SessionEvents', {
 			drinkAdded: 'drinkup.session.drinkAdded',
 			drinkRemoved: 'drinkup.session.drinkRemoved',
-			badgeAdded: 'drinkup.session.badgeAdded'
+			bottleCapAdded: 'drinkup.session.bottleCapAdded'
 		})
 
 		.factory('sessionRepository', function($rootScope, $ionicPlatform, $q, pouchDB, $cordovaGeolocation, moment, drinkupUtils, sessionLevels, SessionEvents) {
@@ -86,8 +86,6 @@
 								session.drinks = drinkupUtils.sortByReverseDate(drinks || [], 'date');
 								return session;
 							});
-					}, function(err) {
-						debugger;
 					});
 			};
 
@@ -127,7 +125,8 @@
 						session.totalCal += drink.cal;
 						session.description = sessionLevels.getLevel(session.totalUnits);
 
-						$rootScope.$broadcast(SessionEvents.drinkAdded, session, event);
+						session.drinks.push(drink);
+						$rootScope.$broadcast(SessionEvents.drinkAdded, session, drink);
 
 						return repo._openStore('drink')
 							.then(function(drinkStore) {
