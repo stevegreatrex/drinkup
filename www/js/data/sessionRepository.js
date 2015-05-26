@@ -3,7 +3,13 @@
 		'pouchdb'
 	])
 
-		.factory('sessionRepository', function($ionicPlatform, $q, pouchDB, $cordovaGeolocation, moment, drinkupUtils, sessionLevels) {
+		.constant('SessionEvents', {
+			drinkAdded: 'drinkup.session.drinkAdded',
+			drinkRemoved: 'drinkup.session.drinkRemoved',
+			badgeAdded: 'drinkup.session.badgeAdded'
+		})
+
+		.factory('sessionRepository', function($rootScope, $ionicPlatform, $q, pouchDB, $cordovaGeolocation, moment, drinkupUtils, sessionLevels, SessionEvents) {
 			function SessionRepository() {
 			}
 
@@ -121,6 +127,8 @@
 						session.totalCal += drink.cal;
 						session.description = sessionLevels.getLevel(session.totalUnits);
 
+						$rootScope.$broadcast(SessionEvents.drinkAdded, session, event);
+
 						return repo._openStore('drink')
 							.then(function(drinkStore) {
 								drinkStore.post(drink);
@@ -149,11 +157,13 @@
 										return repo.getSession(sessionId);
 									})
 									.then(function (session) {
-										session.totalUnits = 0 + session.totalUnits - drink.units;
+										session.totalUnits = session.totalUnits - drink.units;
 										if (session.totalUnits < 0) session.totalUnits = 0;
 										session.totalCal = 0 + session.totalCal - drink.cal;
 										if (session.totalCal < 0) session.totalCal = 0;
 										session.description = sessionLevels.getLevel(session.totalUnits);
+
+										$rootScope.$broadcast(SessionEvents.drinkRemoved, session, drink);
 
 										return repo._openStore()
 											.then(function (sessionStore) {

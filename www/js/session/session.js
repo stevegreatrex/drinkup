@@ -18,9 +18,11 @@
 																				 drinkupUtils,
 																				 profile,
 																				 ProfileEvents,
+																				 SessionEvents,
 																				 drinkTypes,
 																				 drinkCategories,
-																				 drivingLimit) {
+																				 drivingLimit,
+																				 badgeCalculator) {
 
 			$scope.drinkCategories = drinkCategories;
 
@@ -235,6 +237,12 @@
 			$rootScope.$on(ProfileEvents.updated, function(event, p) {
 				profile = p;
 				updateStats();
+			});
+
+			$rootScope.$on(SessionEvents.badgeAdded, function(event, session, badge) {
+				if (session.id !== $scope.session.id) return;
+
+				//todo: show the badge notification
 			});
 		});
 }(angular));
