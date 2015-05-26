@@ -38,18 +38,33 @@
 			};
 
 			BadgeCalculator._badgeDefinitions.push(function(session) {
-				if ((session.drinks || []).filter(function(d) { return d.drinkType.category === 'beer'; }).length) {
+				if (session.drinks.filter(function(d) { return d.drinkType.category === 'beer'; }).length) {
 					return {
+						id: 'beer-1',
 						name: 'Keg Tapper',
+						description: 'Have a beer!',
 						level: 1
 					};
 				}
 			});
 
 			BadgeCalculator._badgeDefinitions.push(function(session) {
-				if ((session.drinks || []).filter(function(d) { return d.drinkType.category === 'wine'; }).length) {
+				if (session.drinks.filter(function(d) { return d.drinkType.category === 'wine'; }).length) {
 					return {
+						id: 'wine-1',
 						name: 'Grape Expectations',
+						description: 'Have some wine!',
+						level: 1
+					};
+				}
+			});
+
+			BadgeCalculator._badgeDefinitions.push(function(session) {
+				if (session.drinks.filter(function(d) { return d.drinkType.category === 'shot'; }).length) {
+					return {
+						id: 'shot-1',
+						name: 'Straight Shooter',
+						description: 'Have a shot!',
 						level: 1
 					};
 				}

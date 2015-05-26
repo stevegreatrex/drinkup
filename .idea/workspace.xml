@@ -2,361 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="957a6a53-f53f-46ae-bd5f-f9b27c91f608" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/browser-logos/android_32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/apple-indexeddb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/browser-logos/blackberry_32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/browser-logos/chrome-android_32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/browser-logos/chrome_32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/cloudwall.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/cors_in_couchdb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/cozy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/debug_mode.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/dev_tools.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/ehealth_africa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/fauxton.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/browser-logos/firefox_32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/browser-logos/internet-explorer-tile_32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/browser-logos/internet-explorer_32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/kittens.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/kittens_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/mbta_alerts.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/offline_replication.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/browser-logos/opera_32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/orson_welles_clapping.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/pepperidge_farm_remembers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/assets/pouchdb-getting-started-todo.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/pouchdb_inspector.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/ribbon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/browser-logos/safari-ios_32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/browser-logos/safari_32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/safari_inspector.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/safari_popup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/smashers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/squarespace_blog.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/screenshots/todo-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/travis-screenshot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-pouchdb/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-04-01-pouchdb-2.1.0.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-04-01-welcome-to-the-pouchdb-blog.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-04-14-pagination-strategies-with-pouchdb.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-05-01-pouchdb-2.2.0.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-05-01-secondary-indexes-have-landed-in-pouchdb.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-06-01-pouchdb-2.2.3.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-06-17-12-pro-tips-for-better-code-with-pouchdb.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-07-25-pouchdb-levels-up.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-08-12-pouchdb-3.0.0.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-08-16-pouchdb-3.0.1.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-08-20-pouchdb-3.0.2.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-08-29-pouchdb-3.0.3.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-09-04-pouchdb-3.0.4.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-09-07-pouchdb-3.0.5.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-09-22-3.0.6.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-10-26-10-things-i-learned-from-reading-and-writing-the-pouchdb-source.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-11-10-3.1.0.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-11-27-testing-pouchdb.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-12-04-3.2.0.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2014-12-11-the-pains-of-being-async-at-heart.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2015-01-05-pouchdb-3.2.1-you-can-always-be-faster.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2015-02-03-fix-up-look-sharp.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2015-02-14-a-quick-one.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2015-02-28-efficiently-managing-ui-state-in-pouchdb.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2015-03-05-taming-the-async-beast-with-es7.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2015-04-05-filtered-replication.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2015-04-07-better-late-than-never.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_posts/2015-05-07-pouchdb-3.5.0-vote-for-pouchdb.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_layouts/2ColLeft.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-pouchdb/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-pouchdb/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/TESTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_config.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/lib/adapters/local/abstract-mapper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/ace/ace.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/adapter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/adapters.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bin/add-license.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/extras/ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/deps/ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/alerts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/alerts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/anchor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/anchors.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-pouchdb/angular-pouchdb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-pouchdb/angular-pouchdb.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/api.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/api_overview.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_guides/async-code.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_guides/attachments.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_data/authors.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/badgeCalculator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/badges.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/scripts/baldrick-test.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/plugins/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/batch_create.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/batch_fetch.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/lib/deps/blob.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/deps/blob.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/block.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/bootstrap/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/bootstrap/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/bootstrap/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/bootstrap.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-pouchdb/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/breadcrumbs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/deps/buffer-browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/deps/buffer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bin/build-all-plugins.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bin/build-site.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_guides/bulk-operations.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/scripts/bundle-browserify-test.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/button-groups.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/buttons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/buttons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/carousel.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/changes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/changes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_guides/changes.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/extras/checkpointer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/checkpointer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/close.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/js/code.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/code.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/code.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/js/code.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_guides/compact-and-destroy.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/compaction.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/component-animations.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/plugins/idb-alt/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/plugins/localstorage/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/plugins/memory/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_guides/conflicts.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/constructor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/create_database.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/create_document.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/database_information.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_guides/databases.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/debug_mode.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_layouts/default.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/defaults.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/delete_attachment.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/delete_database.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/delete_document.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/bin/dev-server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bin/dev-server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_guides/documents.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/dropdowns.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/alert/end.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/code/end.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/lib/deps/errors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/deps/errors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/errors.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/bin/es3ify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bin/es3ify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/evalFilter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/evalView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/events.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/deps/explain404.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/external.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/extras.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/faq.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/feed.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/fetch_document.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/forms.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/scripts/generate_kitchen_sink.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bin/get-version.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/get_attachment.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/getting-started.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/glyphicons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/gql.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/grid.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_layouts/guide.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/guides_nav.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/handlebars/handlebars-v2.0.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/handlebars/handlebars.runtime-v2.0.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/header.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/highlight.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/adapters/http/http.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/adapters/idb/idb-all-docs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/extras/idb-alt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/adapters/idb/idb-blob-support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/adapters/idb/idb-bulk-docs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/adapters/idb/idb-constants.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/adapters/idb/idb-utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/adapters/idb/idb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/iframe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/img.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/lib/adapters/local/find/in-memory-filter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/blog/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/lib/adapters/http/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/lib/adapters/local/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/lib/adapters/local/create-index/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/lib/adapters/local/delete-index/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/lib/adapters/local/find/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/lib/adapters/local/get-indexes/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/plugins/idb-alt/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/plugins/localstorage/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/plugins/memory/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_guides/index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/input-groups.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/scripts/jenkins-deploy.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/jquery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/jumbotron.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/labels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/learn.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/plugins/levelalt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/adapters/leveldb/leveldb-transaction.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/adapters/leveldb/leveldb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/list-group.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_guides/local-documents.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/extras/localstorage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/logo.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/manifest.appcache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/img/mark.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_plugins/markdown.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/deps/md5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/media.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/extras/memory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/merge.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/deps/migrate-browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/deps/migrate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/modals.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/ace/mode-javascript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/nav.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/nav_item.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/navbar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/navs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/navs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/normalize.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/bootstrap/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/pager.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/pagination.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/panels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/deps/parse-doc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/deps/parse-hex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/lib/deps/parse-uri.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/deps/parse-uri.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/plugins.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/popovers.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_layouts/post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/post.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/post_details.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/pouchdb-3.2.2-prerelease.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/dist/pouchdb-3.4.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/dist/pouchdb-3.4.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/dist/pouchdb.find.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/dist/pouchdb.find.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/dist/pouchdb.idb-alt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/dist/pouchdb.idb-alt.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/dist/pouchdb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/pouchdb.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/dist/pouchdb.localstorage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/dist/pouchdb.localstorage.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/dist/pouchdb.memory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/dist/pouchdb.memory.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/dist/pouchdb.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/print.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/progress-bars.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/extras/promise.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/deps/promise.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bin/publish-site.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_guides/queries.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/lib/adapters/local/find/query-planner.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/query_database.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bin/release.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bin/repl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/replicate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/replication.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_guides/replication.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/deps/request-browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/responsive-utilities.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/revisions_diff.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/ribbon.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bin/run-cordova.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bin/run-couch-master-on-travis.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bin/run-coverage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bin/run-csg-on-travis.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/bin/run-test.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bin/run-test.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/save_attachment.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/scaffolding.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/scaffolding.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_guides/setup-couchdb.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_guides/setup-pouchdb.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/setup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/smashbros.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/social.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/alert/start.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/code/start.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/scripts/start_standalone_couch.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/sync.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/tables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/taskqueue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/bin/test-browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bin/test-browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/bin/test-node.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/ace/theme-xcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/theme.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/thumbnails.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/tooltip.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/type.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_guides/updating-deleting.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/deps/upsert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/users.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/utilities.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/utilities.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/lib/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/lib/adapters/local/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/deps/uuid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/pouchdb/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/version-browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/version.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/_includes/api/view_cleanup.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/adapters/websql/websql-bulk-docs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/adapters/websql/websql-constants.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/adapters/websql/websql-utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/lib/adapters/websql/websql.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb/docs/static/less/bootstrap/wells.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/pouchdb-find/www/ace/worker-javascript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/badgeCalculator.js" afterPath="$PROJECT_DIR$/www/js/badgeCalculator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/session/session.html" afterPath="$PROJECT_DIR$/www/js/session/session.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/session/session.js" afterPath="$PROJECT_DIR$/www/js/session/session.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/data/sessionRepository.js" afterPath="$PROJECT_DIR$/www/js/data/sessionRepository.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drinkup.app.iws" />
@@ -377,98 +26,116 @@
     <favorites_list name="drinkup.app" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="sessionRepository.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/data/sessionRepository.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-              <folding>
-                <element signature="e#71#87#0" expanded="false" />
-                <element signature="e#454#460#0" expanded="false" />
-                <element signature="e#526#732#0" expanded="false" />
-                <element signature="e#633#698#0" expanded="false" />
-                <element signature="e#790#1145#0" expanded="false" />
-                <element signature="e#810#953#0" expanded="false" />
-                <element signature="e#1043#1084#0" expanded="false" />
-                <element signature="e#1108#1138#0" expanded="false" />
-                <element signature="e#1207#1591#0" expanded="false" />
-                <element signature="e#1265#1325#0" expanded="false" />
-                <element signature="e#1355#1584#0" expanded="false" />
-                <element signature="e#1658#2644#0" expanded="false" />
-                <element signature="e#1738#1781#0" expanded="false" />
-                <element signature="e#1812#2597#0" expanded="false" />
-                <element signature="e#2037#2260#0" expanded="false" />
-                <element signature="e#2077#2128#0" expanded="false" />
-                <element signature="e#2147#2249#0" expanded="false" />
-                <element signature="e#2181#2237#0" expanded="false" />
-                <element signature="e#2292#2588#0" expanded="false" />
-                <element signature="e#2613#2637#0" expanded="false" />
-                <element signature="e#2768#3012#0" expanded="false" />
-                <element signature="e#3228#3410#0" expanded="false" />
-                <element signature="e#3269#3403#0" expanded="false" />
-                <element signature="e#3295#3394#0" expanded="false" />
-                <element signature="e#3434#3483#0" expanded="false" />
-                <element signature="e#3929#3971#0" expanded="false" />
-                <element signature="e#4079#4131#0" expanded="false" />
-                <element signature="e#4511#4568#0" expanded="false" />
-                <element signature="e#5085#5145#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="badgeCalculator.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/badgeCalculator.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="session.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/js/session/session.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7322314">
-              <caret line="244" column="43" selection-start-line="244" selection-start-column="43" selection-end-line="244" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.740741">
-              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ionic.bundle.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/lib/ionic/js/ionic.bundle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23394" column="46" selection-start-line="23394" selection-start-column="46" selection-end-line="23394" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="session.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/js/session/session.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-4.740741">
+                  <caret line="61" column="57" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sessionRepository.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/js/data/sessionRepository.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#71#87#0" expanded="false" />
+                    <element signature="e#454#460#0" expanded="false" />
+                    <element signature="e#526#732#0" expanded="false" />
+                    <element signature="e#633#698#0" expanded="false" />
+                    <element signature="e#790#1145#0" expanded="false" />
+                    <element signature="e#810#953#0" expanded="false" />
+                    <element signature="e#1043#1084#0" expanded="false" />
+                    <element signature="e#1108#1138#0" expanded="false" />
+                    <element signature="e#1207#1591#0" expanded="false" />
+                    <element signature="e#1265#1325#0" expanded="false" />
+                    <element signature="e#1355#1584#0" expanded="false" />
+                    <element signature="e#1658#2644#0" expanded="false" />
+                    <element signature="e#1738#1781#0" expanded="false" />
+                    <element signature="e#1812#2597#0" expanded="false" />
+                    <element signature="e#2037#2260#0" expanded="false" />
+                    <element signature="e#2077#2128#0" expanded="false" />
+                    <element signature="e#2147#2249#0" expanded="false" />
+                    <element signature="e#2181#2237#0" expanded="false" />
+                    <element signature="e#2292#2588#0" expanded="false" />
+                    <element signature="e#2613#2637#0" expanded="false" />
+                    <element signature="e#2768#3012#0" expanded="false" />
+                    <element signature="e#3228#3410#0" expanded="false" />
+                    <element signature="e#3269#3403#0" expanded="false" />
+                    <element signature="e#3295#3394#0" expanded="false" />
+                    <element signature="e#3434#3483#0" expanded="false" />
+                    <element signature="e#3929#3971#0" expanded="false" />
+                    <element signature="e#4079#4131#0" expanded="false" />
+                    <element signature="e#4511#4568#0" expanded="false" />
+                    <element signature="e#5085#5145#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="badgeCalculator.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/www/js/badgeCalculator.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.43471074">
+                  <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="session.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/js/session/session.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/js/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ionic.bundle.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/lib/ionic/js/ionic.bundle.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="23394" column="46" selection-start-line="23394" selection-start-column="46" selection-end-line="23394" selection-end-column="46" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/www/css/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.46446282">
+                  <caret line="212" column="22" selection-start-line="212" selection-start-column="22" selection-end-line="212" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -522,16 +189,16 @@
         <option value="$PROJECT_DIR$/www/js/data/drinkTypes.js" />
         <option value="$PROJECT_DIR$/www/js/directives.js" />
         <option value="$PROJECT_DIR$/www/js/session/drink-info.html" />
-        <option value="$PROJECT_DIR$/www/js/session/session.html" />
         <option value="$PROJECT_DIR$/www/js/home/home.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/js/data/sessionRepository.js" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/js/badgeCalculator.js" />
         <option value="$PROJECT_DIR$/www/js/session/session.js" />
+        <option value="$PROJECT_DIR$/www/js/badgeCalculator.js" />
+        <option value="$PROJECT_DIR$/www/css/style.css" />
+        <option value="$PROJECT_DIR$/www/js/session/session.html" />
       </list>
     </option>
   </component>
@@ -638,7 +305,7 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file://C:/Development/Home/drinkup/www/index.html&#10;app&#9;FILE&#9;file://C:/Development/Home/drinkup/www/js/app.js&#10;sessionRepo&#9;FILE&#9;file://C:/Development/Home/drinkup/www/js/data/sessionRepository.js&#10;style.css&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/css/style.css&#10;session.html&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.html&#10;session&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.html&#10;cal&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/calculator.js&#10;app.js&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/app.js&#10;app.&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/app.js&#10;drinkTypes&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/drinkTypes.js&#10;sessionRepos&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/sessionRepository.js&#10;home&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/home/home.html&#10;style&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/css/style.css&#10;profile&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/profile/profile.js&#10;index.&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/index.html&#10;calcul&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/calculator.js&#10;sessionrepo&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/sessionRepository.js&#10;utils&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/utils.js&#10;menu&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/menu/menu.html&#10;db&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/db.js&#10;sessi&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.html&#10;session.js&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.js&#10;menu.html&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/menu/menu.html" />
+    <property name="SearchEverywhereHistoryKey" value="style.&#9;FILE&#9;file://C:/Development/Home/drinkup/www/css/style.css&#10;session&#9;FILE&#9;file://C:/Development/Home/drinkup/www/js/session/session.js&#10;index&#9;FILE&#9;file://C:/Development/Home/drinkup/www/index.html&#10;app&#9;FILE&#9;file://C:/Development/Home/drinkup/www/js/app.js&#10;sessionRepo&#9;FILE&#9;file://C:/Development/Home/drinkup/www/js/data/sessionRepository.js&#10;style.css&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/css/style.css&#10;session.html&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.html&#10;cal&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/calculator.js&#10;app.js&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/app.js&#10;app.&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/app.js&#10;drinkTypes&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/drinkTypes.js&#10;sessionRepos&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/sessionRepository.js&#10;home&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/home/home.html&#10;style&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/css/style.css&#10;profile&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/profile/profile.js&#10;index.&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/index.html&#10;calcul&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/calculator.js&#10;sessionrepo&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/sessionRepository.js&#10;utils&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/utils.js&#10;menu&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/menu/menu.html&#10;db&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/data/db.js&#10;sessi&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.html&#10;session.js&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/session/session.js&#10;menu.html&#9;FILE&#9;file://C:/Development/Home/drinkup/drinkup.app/www/js/menu/menu.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -934,27 +601,33 @@
       <option name="project" value="LOCAL" />
       <updated>1432508906956</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Added framework for badges">
+      <created>1432658557620</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1432658557620</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1227608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.50421494" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31493506" sideWeight="0.49578503" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1227608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39935064" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -996,7 +669,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Updated general details" />
     <MESSAGE value="Fixed calculation of sober time and made display of Now line conditional" />
     <MESSAGE value="More useful session stats" />
     <MESSAGE value="Fixed 'now' line and added ability to show date" />
@@ -1021,7 +693,8 @@
     <MESSAGE value="Attempt to get phonegap build playing nice" />
     <MESSAGE value="Updated app name" />
     <MESSAGE value="Center-aligned stats for better appearance" />
-    <option name="LAST_COMMIT_MESSAGE" value="Center-aligned stats for better appearance" />
+    <MESSAGE value="Added framework for badges" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added framework for badges" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1112,6 +785,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3663717">
           <caret line="4342" column="8" selection-start-line="4342" selection-start-column="2" selection-end-line="4342" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1321,58 +995,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8628099">
-          <caret line="128" column="3" selection-start-line="128" selection-start-column="3" selection-end-line="128" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6247934">
           <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/session/session.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8719723">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/ionic/js/ionic.bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23394" column="46" selection-start-line="23394" selection-start-column="46" selection-end-line="23394" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.740741">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/badgeCalculator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1415,10 +1041,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6574395">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/ionic/js/ionic.bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23394" column="46" selection-start-line="23394" selection-start-column="46" selection-end-line="23394" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/session/session.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7322314">
-          <caret line="244" column="43" selection-start-line="244" selection-start-column="43" selection-end-line="244" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46446282">
+          <caret line="212" column="22" selection-start-line="212" selection-start-column="22" selection-end-line="212" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/session/session.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.740741">
+          <caret line="61" column="57" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/badgeCalculator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43471074">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
           <folding />
         </state>
       </provider>

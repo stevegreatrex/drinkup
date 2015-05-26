@@ -45,6 +45,7 @@
 					$scope.session = session;
 					$scope.description = session.description;
 					$scope.drinks = session.drinks;
+					$scope.badges = session.badges || [];
 
 					$scope.startDate = session.drinks.length ?
 						moment(session.drinks[session.drinks.length-1].date) : moment(session.startDate);
@@ -242,7 +243,7 @@
 			$rootScope.$on(SessionEvents.badgeAdded, function(event, session, badge) {
 				if (session.id !== $scope.session.id) return;
 
-				//todo: show the badge notification
+				$scope.badges.push(badge);
 			});
 		});
 }(angular));

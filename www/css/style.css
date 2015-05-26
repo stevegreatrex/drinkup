@@ -207,3 +207,19 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
     color: #606060;
     font-size: 14px;
 }
+
+.bottle-top-container {
+    text-align: center;
+    min-height: 200px;
+}
+
+.bottle-top {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.bottle-top[data-bottle-top-level="1"] {
+    background-color: #597899;
+}

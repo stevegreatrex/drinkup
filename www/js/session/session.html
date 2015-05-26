@@ -52,6 +52,18 @@
 			<ion-slide>
 				<nvd3 class="bac-chart" data="bacChart.data" options="bacChart.options"></nvd3>
 			</ion-slide>
+
+			<ion-slide>
+				<div ng-show="!badges.length" class="placeholder">
+					<h2>No badges yet!</h2>
+					<h3>Gain badges for your drinking exploits</h3>
+				</div>
+				<div class="bottle-top-container">
+					<div ng-repeat="badge in badges" class="bottle-top" data-bottle-top-level="{{badge.level}}">
+						{{badge.name}}
+					</div>
+				</div>
+			</ion-slide>
 		</ion-slide-box>
 
 		<button ng-show="!addingDrink" class="button button-block button-balanced add-drink-button" ng-click="showAddDrinkModal()">
