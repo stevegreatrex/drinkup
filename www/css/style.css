@@ -207,3 +207,25 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
     color: #606060;
     font-size: 14px;
 }
+
+.disclaimer p {
+    margin: 20px 20px 50px 20px;
+    font-size: 20px;
+    clear: both;
+}
+
+.disclaimer .warning {
+    color: #ffc900;
+}
+
+.disclaimer .image-left {
+    font-size: 60px;
+    margin-right: 20px;
+    float: left;
+}
+
+.disclaimer .image-right {
+    font-size: 60px;
+    margin-left: 20px;
+    float: right;
+}
