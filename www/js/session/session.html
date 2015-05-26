@@ -1,6 +1,6 @@
 <ion-view view-title="{{description}}">
 	<ion-scroll direction="y">
-		<ion-slide-box>
+		<ion-slide-box ng-style="{ opacity: !!session ? 1 : 0 }">
 			<ion-slide>
 				<div class="stats" ng-show="!!drinks.length">
 					<div class="row drinks">

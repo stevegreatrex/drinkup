@@ -153,7 +153,6 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
 
 .slider {
     padding-bottom: 20px; /* to account for pager dots */
-    height: 250px;
 }
 .slider-pager {
     bottom: 0;
