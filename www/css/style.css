@@ -232,7 +232,7 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
 
 .bottle-cap-container {
     text-align: center;
-    min-height: 200px;
+    margin-top: 10px;
 }
 
 .bottle-cap {

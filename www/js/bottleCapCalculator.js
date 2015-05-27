@@ -12,13 +12,9 @@
 
 			BottleCapCalculator.prototype.getBottleCaps = function(session) {
 				var bottleCaps = [];
-				BottleCapCalculator._bottleCapDefinitions.forEach(function(generator) {
-					var generatedBottleCaps = generator(session);
-					if (!generatedBottleCaps) return;
-					if (angular.isArray(generatedBottleCaps)) {
-						bottleCaps = bottleCaps.concat(generatedBottleCaps);
-					} else {
-						bottleCaps.push(generatedBottleCaps);
+				BottleCapCalculator._bottleCapDefinitions.forEach(function(definition) {
+					if (definition.matches(session)) {
+						bottleCaps.push(angular.extend({}, definition, { matches: null }));
 					}
 				});
 
@@ -37,36 +33,33 @@
 				});
 			};
 
-			BottleCapCalculator._bottleCapDefinitions.push(function(session) {
-				if (session.drinks.filter(function(d) { return d.drinkType.category === 'beer'; }).length) {
-					return {
-						id: 'beer-1',
-						name: 'Keg Tapper',
-						description: 'Have a beer!',
-						level: 1
-					};
+			BottleCapCalculator._bottleCapDefinitions.push({
+				id: 'beer-1',
+				name: 'Keg Tapper',
+				description: 'Have a beer!',
+				level: 1,
+				matches: function(session) {
+					return session.drinks.filter(function(d) { return d.drinkType.category === 'beer'; }).length;
 				}
 			});
 
-			BottleCapCalculator._bottleCapDefinitions.push(function(session) {
-				if (session.drinks.filter(function(d) { return d.drinkType.category === 'wine'; }).length) {
-					return {
-						id: 'wine-1',
-						name: 'Grape Expectations',
-						description: 'Have some wine!',
-						level: 1
-					};
+			BottleCapCalculator._bottleCapDefinitions.push({
+				id: 'wine-1',
+				name: 'Grape Expectations',
+				description: 'Have some wine!',
+				level: 1,
+				matches: function(session) {
+					return session.drinks.filter(function(d) { return d.drinkType.category === 'wine'; }).length;
 				}
 			});
 
-			BottleCapCalculator._bottleCapDefinitions.push(function(session) {
-				if (session.drinks.filter(function(d) { return d.drinkType.category === 'shot'; }).length) {
-					return {
-						id: 'shot-1',
-						name: 'Straight Shooter',
-						description: 'Have a shot!',
-						level: 1
-					};
+			BottleCapCalculator._bottleCapDefinitions.push({
+				id: 'shot-1',
+				name: 'Straight Shooter',
+				description: 'Have a shot!',
+				level: 1,
+				matches: function(session) {
+					return session.drinks.filter(function(d) { return d.drinkType.category === 'shot'; }).length;
 				}
 			});
 
