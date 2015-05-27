@@ -107,13 +107,22 @@
 				$scope.drinkInfoModal.show();
 			};
 
+			var pendingBottleCaps = [];
 			$scope.showBottleCapModal = function(bottleCap) {
-				$scope.selectedBottleCap = bottleCap;
-				$scope.bottleCapModal.show();
+				if (!$scope.bottleCapModal.isShown()) {
+					$scope.selectedBottleCap = bottleCap;
+					$scope.bottleCapModal.show();
+				} else {
+					pendingBottleCaps.push(bottleCap);
+				}
 			};
 
 			$scope.closeBottleCapModal = function() {
-				$scope.bottleCapModal.hide();
+				$scope.bottleCapModal.hide().then(function() {
+					if (pendingBottleCaps.length) {
+						$scope.showBottleCapModal(pendingBottleCaps.pop());
+					}
+				});
 			};
 
 			$scope.deleteDrink = function(drink) {

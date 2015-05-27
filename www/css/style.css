@@ -247,6 +247,11 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
     background-color: #597899;
 }
 
+.bottle-cap[data-bottle-cap-level="2"] {
+    background-color: #B08A00;
+    font-size: 24px;
+}
+
 .bottle-cap-modal .large-icon {
     display: block;
     font-size: 120px;

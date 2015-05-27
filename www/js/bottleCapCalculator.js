@@ -1,18 +1,16 @@
 (function(angular) {
-	angular.module('drinkup.bottleCapCalculator', [])
+	angular.module('drinkup.bottleCapCalculator', [
+		'drinkup.data.bottleCapDefinitions'
+	])
 
 		.factory('BottleCapCalculator', function($rootScope, SessionEvents) {
-			function BottleCapCalculator() {}
-
-			BottleCapCalculator._bottleCapDefinitions = [];
-
-			BottleCapCalculator.addBottleCap = function(bottleCapGenerator) {
-				BottleCapCalculator._bottleCapDefinitions.push(bottleCapGenerator);
-			};
+			function BottleCapCalculator() {
+				this._bottleCapDefinitions = [];
+			}
 
 			BottleCapCalculator.prototype.getBottleCaps = function(session) {
 				var bottleCaps = [];
-				BottleCapCalculator._bottleCapDefinitions.forEach(function(definition) {
+				this._bottleCapDefinitions.forEach(function(definition) {
 					if (definition.matches(session)) {
 						bottleCaps.push(angular.extend({}, definition, { matches: null }));
 					}
@@ -33,41 +31,20 @@
 				});
 			};
 
-			BottleCapCalculator._bottleCapDefinitions.push({
-				id: 'beer-1',
-				name: 'Keg Tapper',
-				description: 'Have a beer!',
-				level: 1,
-				matches: function(session) {
-					return session.drinks.filter(function(d) { return d.drinkType.category === 'beer'; }).length;
+			BottleCapCalculator.prototype.addDefinitions = function(definition) {
+				if(angular.isArray(definition)) {
+					this._bottleCapDefinitions = this._bottleCapDefinitions.concat(definition);
+				} else {
+					this._bottleCapDefinitions.push(definition);
 				}
-			});
-
-			BottleCapCalculator._bottleCapDefinitions.push({
-				id: 'wine-1',
-				name: 'Grape Expectations',
-				description: 'Have some wine!',
-				level: 1,
-				matches: function(session) {
-					return session.drinks.filter(function(d) { return d.drinkType.category === 'wine'; }).length;
-				}
-			});
-
-			BottleCapCalculator._bottleCapDefinitions.push({
-				id: 'shot-1',
-				name: 'Straight Shooter',
-				description: 'Have a shot!',
-				level: 1,
-				matches: function(session) {
-					return session.drinks.filter(function(d) { return d.drinkType.category === 'shot'; }).length;
-				}
-			});
+			};
 
 			return BottleCapCalculator;
 		})
 
-		.service('bottleCapCalculator', function($rootScope, BottleCapCalculator, SessionEvents) {
+		.service('bottleCapCalculator', function($rootScope, BottleCapCalculator, SessionEvents, bottleCapDefinitions) {
 			var calculator = new BottleCapCalculator();
+			calculator.addDefinitions(bottleCapDefinitions);
 
 			$rootScope.$on(SessionEvents.drinkAdded, function(event, session) {
 				calculator.applyBottleCaps(session);
