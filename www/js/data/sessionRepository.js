@@ -100,6 +100,7 @@
 					units: serving.ml * drinkType.abv / 1000,
 					cal: serving.ml * drinkType.calPerMl
 				};
+				drink.id = drink._id;
 
 				var getLocation = $q.defer();
 
