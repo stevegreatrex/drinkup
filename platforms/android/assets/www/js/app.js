@@ -7,6 +7,7 @@
   angular.module('drinkup', [
 		'ionic',
 		'indexedDB',
+		'pouchdb',
 		'angularMoment',
 		'nvd3',
 		'ion-autocomplete',
@@ -21,6 +22,7 @@
 		'drinkup.server',
 		'drinkup.utils',
 		'drinkup.calculator',
+		'drinkup.bottleCapCalculator',
 
 		'drinkup.directives',
 		'drinkup.directives.drinkIcon',
@@ -44,6 +46,13 @@
         }
       });
     })
+
+		.config(function(uiGmapGoogleMapApiProvider) {
+			uiGmapGoogleMapApiProvider.configure({
+				v: '3.17',
+				libraries: 'geometry,visualization'
+			});
+		})
 
 		.config(function($stateProvider, $urlRouterProvider) {
 			$stateProvider

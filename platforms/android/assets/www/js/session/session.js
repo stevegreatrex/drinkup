@@ -18,9 +18,11 @@
 																				 drinkupUtils,
 																				 profile,
 																				 ProfileEvents,
+																				 SessionEvents,
 																				 drinkTypes,
 																				 drinkCategories,
-																				 drivingLimit) {
+																				 drivingLimit,
+																				 bottleCapCalculator) {
 
 			$scope.drinkCategories = drinkCategories;
 
@@ -38,11 +40,19 @@
 				$scope.drinkInfoModal = modal;
 			});
 
+			$ionicModal.fromTemplateUrl('js/session/bottle-cap.html', {
+				scope: $scope,
+				animation: 'slide-in-up'
+			}).then(function(modal) {
+				$scope.bottleCapModal = modal;
+			});
+
 			sessionRepository.getSession($stateParams.sessionId)
 				.then(function(session) {
 					$scope.session = session;
 					$scope.description = session.description;
 					$scope.drinks = session.drinks;
+					$scope.bottleCaps = session.bottleCaps || [];
 
 					$scope.startDate = session.drinks.length ?
 						moment(session.drinks[session.drinks.length-1].date) : moment(session.startDate);
@@ -70,12 +80,14 @@
 				$scope.addDrinkModal.hide();
 				if (!drinkType || !serving) { return; }
 
-				return sessionRepository.addDrink($scope.session.id, drinkType, serving)
+				$scope.addingDrink = true;
+				sessionRepository.addDrink($scope.session.id, drinkType, serving)
 					.then(function(drink) {
 						$scope.drinks.unshift(drink);
 						$scope.session.totalUnits += drink.units;
 						$scope.session.totalCal += drink.cal;
 						updateStats();
+						$scope.addingDrink = false;
 					});
 			};
 
@@ -93,6 +105,15 @@
 			$scope.showDrinkInfoModal = function(drink) {
 				$scope.selectedDrink = drink;
 				$scope.drinkInfoModal.show();
+			};
+
+			$scope.showBottleCapModal = function(bottleCap) {
+				$scope.selectedBottleCap = bottleCap;
+				$scope.bottleCapModal.show();
+			};
+
+			$scope.closeBottleCapModal = function() {
+				$scope.bottleCapModal.hide();
 			};
 
 			$scope.deleteDrink = function(drink) {
@@ -228,11 +249,19 @@
 
 				$scope.addDrinkModal && $scope.addDrinkModal.remove();
 				$scope.drinkInfoModal && $scope.drinkInfoModal.remove();
+				$scope.bottleCapModal && $scope.bottleCapModal.remove();
 			});
 
 			$rootScope.$on(ProfileEvents.updated, function(event, p) {
 				profile = p;
 				updateStats();
+			});
+
+			$rootScope.$on(SessionEvents.bottleCapAdded, function(event, session, bottleCap) {
+				if (session.id !== $scope.session.id) return;
+
+				$scope.bottleCaps.push(bottleCap);
+				$scope.showBottleCapModal(bottleCap);
 			});
 		});
 }(angular));

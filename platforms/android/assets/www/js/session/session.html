@@ -1,8 +1,8 @@
 <ion-view view-title="{{description}}">
 	<ion-scroll direction="y">
-		<ion-slide-box>
+		<ion-slide-box ng-style="{ opacity: !!session ? 1 : 0 }">
 			<ion-slide>
-				<div class="stats">
+				<div class="stats" ng-show="!!drinks.length">
 					<div class="row drinks">
 						<drink-icon ng-repeat="drink in drinks | reverse" drink-type="drink.drinkType"></drink-icon>
 						<label class="stat-label">{{totalDrinks}} <span class="sub-label">drinks</span></label>
@@ -19,10 +19,15 @@
 						<label class="stat-label"><span class="stat">{{bloodAlcohol | number:3}}</span> <span class="sub-label">blood alcohol</span></label>
 					</div>
 				</div>
+				<div ng-show="!drinks.length" class="placeholder">
+					<h2>Nothing to see here</h2>
+					<h3>Try adding a drink below</h3>
+				</div>
+
 			</ion-slide>
 
 			<ion-slide>
-				<div class="stats times">
+				<div class="stats times" ng-show="!!drinks.length">
 					<div class="row">
 						<label class="stat-label">
 							<span class="stat">100% sober {{soberTime.fromNow()}}</span>
@@ -38,17 +43,36 @@
 						</label>
 					</div>
 				</div>
+				<div ng-show="!drinks.length" class="placeholder">
+					<h2>Nothing to see here</h2>
+					<h3>Try adding a drink below</h3>
+				</div>
 			</ion-slide>
 
 			<ion-slide>
 				<nvd3 class="bac-chart" data="bacChart.data" options="bacChart.options"></nvd3>
 			</ion-slide>
+
+			<ion-slide>
+				<div ng-show="!bottleCaps.length" class="placeholder">
+					<h2>No bottle caps yet!</h2>
+					<h3>Earn bottle caps for your drinking exploits</h3>
+				</div>
+				<div class="bottle-cap-container">
+					<div ng-repeat="bottleCap in bottleCaps" class="bottle-cap" data-bottle-cap-level="{{bottleCap.level}}" ng-click="showBottleCapModal(bottleCap)">
+						<i class="fa fa-trophy"></i> {{bottleCap.name}}
+					</div>
+				</div>
+			</ion-slide>
 		</ion-slide-box>
 
-		<button class="button button-block button-balanced add-drink-button" ng-click="showAddDrinkModal()">
+		<button ng-show="!addingDrink" class="button button-block button-balanced add-drink-button" ng-click="showAddDrinkModal()">
 			<span ng-show="drinks.length">Have another!</span>
 			<span ng-show="!drinks.length">Get started!</span>
 		</button>
+		<ion-spinner ng-show="addingDrink" class="add-drink-spinner">
+
+		</ion-spinner>
 
 		<div class="card">
 			<ion-list>

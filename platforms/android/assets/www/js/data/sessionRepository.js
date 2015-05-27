@@ -1,7 +1,15 @@
 (function(angular) {
-	angular.module('drinkup.data.sessionRepository', [])
+	angular.module('drinkup.data.sessionRepository', [
+		'pouchdb'
+	])
 
-		.factory('sessionRepository', function($ionicPlatform, $q, $indexedDB, $cordovaGeolocation, moment, drinkupUtils, sessionLevels) {
+		.constant('SessionEvents', {
+			drinkAdded: 'drinkup.session.drinkAdded',
+			drinkRemoved: 'drinkup.session.drinkRemoved',
+			bottleCapAdded: 'drinkup.session.bottleCapAdded'
+		})
+
+		.factory('sessionRepository', function($rootScope, $ionicPlatform, $q, pouchDB, $cordovaGeolocation, moment, drinkupUtils, sessionLevels, SessionEvents) {
 			function SessionRepository() {
 			}
 
@@ -10,9 +18,8 @@
 				storeName = storeName || 'session';
 
 				$ionicPlatform.ready(function() {
-					$indexedDB.openStore(storeName, function(store) {
-						defer.resolve(store);
-					});
+					var db = pouchDB(storeName);
+					defer.resolve(db);
 				});
 
 				return defer.promise;
@@ -20,15 +27,17 @@
 
 			SessionRepository.prototype.addSession = function() {
 				var session = {
-					id: drinkupUtils.createGuid(),
+					_id: drinkupUtils.createGuid(),
 					description: sessionLevels.getLevel(0),
 					totalUnits: 0,
 					startDate: moment().toDate()
 				};
 
+				session.id = session._id;
+
 				return this._openStore()
 					.then(function(store) {
-						return store.insert(session)
+						return store.post(session)
 					})
 					.then(function() {
 						return session;
@@ -38,9 +47,12 @@
 			SessionRepository.prototype.getAllSessions = function() {
 				return this._openStore()
 					.then(function(store) {
-						return store.getAll();
+						return store.allDocs({ include_docs: true });
 					})
-					.then(function(sessions) {
+					.then(function(result) {
+						var sessions = result.rows
+							.map(function(r) { return r.doc; })
+							.map(function(session) { session.id = session._id; return session;});
 						return drinkupUtils.sortByReverseDate(sessions, 'startDate');
 					});
 			};
@@ -50,24 +62,31 @@
 
 				return this._openStore()
 					.then(function(store) {
-						return store.find(sessionId);
+						return store.get(sessionId);
 					})
 					.then(function(session) {
 						if (isNaN(session.totalUnits)) session.totalUnits = 0;
 						if (isNaN(session.totalCal)) session.totalCal = 0;
+						session.id = session._id;
+
 						return repo._openStore('drink')
 							.then(function(drinkStore) {
-								return drinkStore.findWhere({
-									indexName: 'sessionId',
-									keyRange: IDBKeyRange.only(sessionId)
+								return drinkStore.createIndex({
+									index: {fields: ['sessionId']}
+								}).then(function () {
+									return drinkStore.find({
+										selector: { sessionId: sessionId}
+									});
 								});
 							})
-							.then(function(drinks) {
+							.then(function(result) {
+								var drinks = result.docs.map(function(d) { d.id = d._id; return d; });
 								session.totalUnits = session.totalUnits || 0;
+								session.totalCal = session.totalCal || 0;
 								session.drinks = drinkupUtils.sortByReverseDate(drinks || [], 'date');
 								return session;
 							});
-					})
+					});
 			};
 
 			SessionRepository.prototype.addDrink = function(sessionId, drinkType, serving) {
@@ -76,13 +95,18 @@
 					sessionId: sessionId,
 					drinkType: drinkType,
 					serving: serving,
-					id: drinkupUtils.createGuid(),
+					_id: drinkupUtils.createGuid(),
 					date: moment.utc().toDate(),
 					units: serving.ml * drinkType.abv / 1000,
 					cal: serving.ml * drinkType.calPerMl
 				};
 
-				return $cordovaGeolocation.getCurrentPosition({ timeout: 500 })
+				var getLocation = $q.defer();
+
+				$cordovaGeolocation.getCurrentPosition({ timeout: 3000 })
+					.then(getLocation.resolve, getLocation.resolve);
+
+				return getLocation.promise
 					.then(function(location) {
 						if (location && location.coords) {
 							drink.location = {
@@ -90,6 +114,8 @@
 								longitude: location.coords.longitude
 							};
 						}
+					})
+					.then(function() {
 						return repo.getSession(sessionId);
 					})
 					.then(function(session) {
@@ -99,15 +125,18 @@
 						session.totalCal += drink.cal;
 						session.description = sessionLevels.getLevel(session.totalUnits);
 
+						session.drinks.push(drink);
+						$rootScope.$broadcast(SessionEvents.drinkAdded, session, drink);
+
 						return repo._openStore('drink')
 							.then(function(drinkStore) {
-								return drinkStore.insert(drink);
+								drinkStore.post(drink);
 							})
 							.then(function() {
 								return repo._openStore();
 							})
 							.then(function(sessionStore) {
-								return sessionStore.upsert(session);
+								return sessionStore.put(session);
 							})
 							.then(function() {
 								return drink;
@@ -120,22 +149,24 @@
 
 				return this._openStore('drink')
 					.then(function(drinkStore) {
-						return drinkStore.find(drinkId)
+						return drinkStore.get(drinkId)
 							.then(function (drink) {
-								return drinkStore.delete(drinkId)
+								return drinkStore.remove(drink)
 									.then(function() {
 										return repo.getSession(sessionId);
 									})
 									.then(function (session) {
-										session.totalUnits = 0 + session.totalUnits - drink.units;
+										session.totalUnits = session.totalUnits - drink.units;
 										if (session.totalUnits < 0) session.totalUnits = 0;
 										session.totalCal = 0 + session.totalCal - drink.cal;
 										if (session.totalCal < 0) session.totalCal = 0;
 										session.description = sessionLevels.getLevel(session.totalUnits);
 
+										$rootScope.$broadcast(SessionEvents.drinkRemoved, session, drink);
+
 										return repo._openStore()
 											.then(function (sessionStore) {
-												return sessionStore.upsert(session);
+												return sessionStore.put(session);
 											});
 									});
 							});

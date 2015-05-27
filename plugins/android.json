@@ -39,13 +39,13 @@
         "com.ionic.keyboard": {
             "PACKAGE_NAME": "com.ionicframework.drinkupapp430705"
         },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.drinkupapp430705"
+        },
         "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.ionicframework.drinkupapp430705"
         },
         "org.apache.cordova.console": {
-            "PACKAGE_NAME": "com.ionicframework.drinkupapp430705"
-        },
-        "org.apache.cordova.device": {
             "PACKAGE_NAME": "com.ionicframework.drinkupapp430705"
         }
     },
