@@ -1,7 +1,12 @@
 (function(angular) {
 	angular.module('drinkup.data.bottleCapDefinitions', [])
 
-		.factory('bottleCapDefinitions', function(moment, profile, calculator) {
+		.constant('genderCalorieConstants', {
+			male: 2400,
+			female: 2000
+		})
+
+		.factory('bottleCapDefinitions', function(moment, genderCalorieConstants, profile, calculator) {
 			var definitions = [
 				{
 					id: 'beer-1',
@@ -35,7 +40,7 @@
 
 				{
 					id: 'mix-1',
-					name: 'Mixing it up',
+					name: 'Mix It Up',
 					description: 'Have 2 types of drink in the same session',
 					level: 2,
 					matches: function(session) {
@@ -48,8 +53,28 @@
 				},
 
 				{
+					id: 'cal-1',
+					name: 'Liquid Lunch',
+					description: 'Have 1/3rd of recommended daily calorie in drinks',
+					level: 2,
+					matches: function(session) {
+						return session.totalCal >= (genderCalorieConstants[profile.gender] / 3);
+					}
+				},
+
+				{
+					id: 'cal-2',
+					name: 'Drink Yourself Slim',
+					description: 'Have all of your recommended daily calories in drinks',
+					level: 3,
+					matches: function(session) {
+						return session.totalCal >= genderCalorieConstants[profile.gender];
+					}
+				},
+
+				{
 					id: 'bac-1',
-					name: 'Replacing my blood',
+					name: 'Replacing My Blood',
 					description: 'Hit a peak blood alcohol content of 0.2',
 					level: 3,
 					matches: function(session) {

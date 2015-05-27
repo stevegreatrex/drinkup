@@ -264,6 +264,18 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
     text-align: center;
 }
 
+.bottle-cap-modal [data-bottle-cap-level="1"] .large-icon {
+    background-color: #597899;
+}
+
+.bottle-cap-modal [data-bottle-cap-level="2"] .large-icon {
+    background-color: #B08A00;
+}
+
+.bottle-cap-modal [data-bottle-cap-level="3"] .large-icon {
+    background-color: #981100;
+}
+
 .bottle-cap-modal h1 {
     text-align: center;
 }
