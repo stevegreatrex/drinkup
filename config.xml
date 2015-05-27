@@ -22,6 +22,7 @@
   <feature name="Geolocation">
     <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
   </feature>
+  <feature name="http://api.phonegap.com/1.0/geolocation"/>
   <plugin name="org.apache.cordova.core.geolocation" />
   <platform name="android">
     <icon src="resources\android\icon\drawable-ldpi-icon.png" density="ldpi"/>
