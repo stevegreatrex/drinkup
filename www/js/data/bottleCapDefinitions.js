@@ -1,7 +1,7 @@
 (function(angular) {
 	angular.module('drinkup.data.bottleCapDefinitions', [])
 
-		.factory('bottleCapDefinitions', function() {
+		.factory('bottleCapDefinitions', function(moment, profile, calculator) {
 			var definitions = [
 				{
 					id: 'beer-1',
@@ -44,6 +44,18 @@
 							categories[d.drinkType.category] = true;
 						});
 						return Object.keys(categories).length > 1;
+					}
+				},
+
+				{
+					id: 'bac-1',
+					name: 'Replacing my blood',
+					description: 'Hit a peak blood alcohol content of 0.2',
+					level: 3,
+					matches: function(session) {
+						var drinkingTime = moment().diff(session.startDate);
+						var bac = calculator.calculateBloodAlcohol(profile, drinkingTime, session.totalUnits);
+						return bac >= 0.2;
 					}
 				}
 			];
