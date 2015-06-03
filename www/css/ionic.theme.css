@@ -3057,7 +3057,7 @@ a.subdued:last-child {
 @media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .bar {
         border: none;
-        background-image: linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
+        background-image: none;
         background-position: bottom;
         background-size: 100% 1px;
         background-repeat: no-repeat; } }
@@ -3079,85 +3079,85 @@ a.subdued:last-child {
 .bar.bar-light {
     border-color: #ddd;
     background-color: #202020;
-    background-image: linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
+    background-image: none;
     color: #444; }
 .bar.bar-light .title {
     color: #444; }
 .bar.bar-light.bar-footer {
-    background-image: linear-gradient(180deg, #ddd, #ddd 50%, transparent 50%); }
+    background-image: none; }
 .bar.bar-stable {
     border-color: #375a7f;
     background-color: #375a7f;
-    background-image: linear-gradient(0deg, #375a7f, #375a7f 50%, transparent 50%);
+    background-image: none;
     color: #eee; }
 .bar.bar-stable .title {
     color: #d0d0d0; }
 
 .bar.bar-stable.bar-footer {
-    background-image: linear-gradient(180deg, #b2b2b2, #b2b2b2 50%, transparent 50%); }
+    background-image: none; }
 .bar.bar-positive {
     border-color: #1b6aea;
     background-color: #4a87ee;
-    background-image: linear-gradient(0deg, #1b6aea, #1b6aea 50%, transparent 50%);
+    background-image: none;
     color: #fff; }
 .bar.bar-positive .title {
     color: #fff; }
 .bar.bar-positive.bar-footer {
-    background-image: linear-gradient(180deg, #1b6aea, #1b6aea 50%, transparent 50%); }
+    background-image: none; }
 .bar.bar-calm {
     border-color: #849699;
     background-color: #a0aeb0;
-    background-image: linear-gradient(0deg, #849699, #849699 50%, transparent 50%);
+    background-image: none;
     color: #fff; }
 .bar.bar-calm .title {
     color: #fff; }
 .bar.bar-calm.bar-footer {
-    background-image: linear-gradient(180deg, #849699, #849699 50%, transparent 50%); }
+    background-image: none; }
 .bar.bar-assertive {
     border-color: #e42712;
     background-color: #ef4e3a;
-    background-image: linear-gradient(0deg, #e42712, #e42712 50%, transparent 50%);
+    background-image: none;
     color: #fff; }
 .bar.bar-assertive .title {
     color: #fff; }
 .bar.bar-assertive.bar-footer {
-    background-image: linear-gradient(180deg, #e42712, #e42712 50%, transparent 50%); }
+    background-image: none; }
 .bar.bar-balanced {
     border-color: #00bc8c;
     background-color: #00bc8c;
-    background-image: linear-gradient(0deg, #00bc8c, #00bc8c 50%, transparent 50%);
+    background-image: none;
     color: #fff; }
 .bar.bar-balanced .title {
     color: #fff; }
 .bar.bar-balanced.bar-footer {
-    background-image: linear-gradient(180deg, #00bc8c, #1b6aea 50%, transparent 50%); }
+    background-image: none; }
 .bar.bar-energized {
     border-color: #eeac28;
     background-color: #f0b840;
-    background-image: linear-gradient(0deg, #eeac28, #eeac28 50%, transparent 50%);
+    background-image: none;
     color: #fff; }
 .bar.bar-energized .title {
     color: #fff; }
 .bar.bar-energized.bar-footer {
-    background-image: linear-gradient(180deg, #eeac28, #eeac28 50%, transparent 50%); }
+    background-image: none; }
 .bar.bar-royal {
     border-color: #2c147a;
     background-color: #391a9d;
-    background-image: linear-gradient(0deg, #2c147a, #2c147a 50%, transparent 50%);
+    background-image: none;
     color: #fff; }
 .bar.bar-royal .title {
     color: #fff; }
 .bar.bar-royal.bar-footer {
-    background-image: linear-gradient(180deg, #2c147a, #2c147a 50%, transparent 50%); }
+    background-image: none; }
 .bar.bar-dark {
     border-color: #111;
     background-color: #202020;
-    background-image: linear-gradient(0deg, #111, #111 50%, transparent 50%);
+    background-image: none;
     color: #fff; }
 .bar.bar-dark .title {
     color: #fff; }
 .bar.bar-dark.bar-footer {
-    background-image: linear-gradient(180deg, #111, #111 50%, transparent 50%); }
+    background-image: none; }
 .bar .title {
     position: absolute;
     top: 0;
@@ -3507,7 +3507,7 @@ a.subdued:last-child {
     transform: translate3d(0, 0, 0);
     border-color: #b2b2b2;
     background-color: #505050;
-    background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
+    background-image: none;
     color: #444;
     position: absolute;
     bottom: 0;
@@ -3534,7 +3534,7 @@ a.subdued:last-child {
 .tabs-light > .tabs, .tabs.tabs-light {
     border-color: #ddd;
     background-color: #202020;
-    background-image: linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
+    background-image: none;
     color: #444; }
 .tabs-light > .tabs .tab-item .badge, .tabs.tabs-light .tab-item .badge {
     background-color: #444;
@@ -3543,7 +3543,7 @@ a.subdued:last-child {
 .tabs-stable > .tabs, .tabs.tabs-stable {
     border-color: #b2b2b2;
     background-color: #505050;
-    background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
+    background-image: none;
     color: #444; }
 .tabs-stable > .tabs .tab-item .badge, .tabs.tabs-stable .tab-item .badge {
     background-color: #444;
@@ -3552,7 +3552,7 @@ a.subdued:last-child {
 .tabs-positive > .tabs, .tabs.tabs-positive {
     border-color: #1b6aea;
     background-color: #4a87ee;
-    background-image: linear-gradient(0deg, #1b6aea, #1b6aea 50%, transparent 50%);
+    background-image: none;
     color: #fff; }
 .tabs-positive > .tabs .tab-item .badge, .tabs.tabs-positive .tab-item .badge {
     background-color: #fff;
@@ -3561,7 +3561,7 @@ a.subdued:last-child {
 .tabs-calm > .tabs, .tabs.tabs-calm {
     border-color: #849699;
     background-color: #a0aeb0;
-    background-image: linear-gradient(0deg, #849699, #849699 50%, transparent 50%);
+    background-image: none;
     color: #fff; }
 .tabs-calm > .tabs .tab-item .badge, .tabs.tabs-calm .tab-item .badge {
     background-color: #fff;
@@ -3570,7 +3570,7 @@ a.subdued:last-child {
 .tabs-assertive > .tabs, .tabs.tabs-assertive {
     border-color: #e42712;
     background-color: #ef4e3a;
-    background-image: linear-gradient(0deg, #e42712, #e42712 50%, transparent 50%);
+    background-image: none;
     color: #fff; }
 .tabs-assertive > .tabs .tab-item .badge, .tabs.tabs-assertive .tab-item .badge {
     background-color: #fff;
@@ -3579,7 +3579,7 @@ a.subdued:last-child {
 .tabs-balanced > .tabs, .tabs.tabs-balanced {
     border-color: #00bc8c;
     background-color: #00bc8c;
-    background-image: linear-gradient(0deg, #00bc8c, #00bc8c 50%, transparent 50%);
+    background-image: none;
     color: #fff; }
 .tabs-balanced > .tabs .tab-item .badge, .tabs.tabs-balanced .tab-item .badge {
     background-color: #fff;
@@ -3588,7 +3588,7 @@ a.subdued:last-child {
 .tabs-energized > .tabs, .tabs.tabs-energized {
     border-color: #eeac28;
     background-color: #f0b840;
-    background-image: linear-gradient(0deg, #eeac28, #eeac28 50%, transparent 50%);
+    background-image: none;
     color: #fff; }
 .tabs-energized > .tabs .tab-item .badge, .tabs.tabs-energized .tab-item .badge {
     background-color: #fff;
@@ -3597,7 +3597,7 @@ a.subdued:last-child {
 .tabs-royal > .tabs, .tabs.tabs-royal {
     border-color: #2c147a;
     background-color: #391a9d;
-    background-image: linear-gradient(0deg, #2c147a, #2c147a 50%, transparent 50%);
+    background-image: none;
     color: #fff; }
 .tabs-royal > .tabs .tab-item .badge, .tabs.tabs-royal .tab-item .badge {
     background-color: #fff;
@@ -3606,7 +3606,7 @@ a.subdued:last-child {
 .tabs-dark > .tabs, .tabs.tabs-dark {
     border-color: #111;
     background-color: #202020;
-    background-image: linear-gradient(0deg, #111, #111 50%, transparent 50%);
+    background-image: none;
     color: #fff; }
 .tabs-dark > .tabs .tab-item .badge, .tabs.tabs-dark .tab-item .badge {
     background-color: #fff;
@@ -3908,47 +3908,47 @@ a.subdued:last-child {
 
 .tabs-background-light .tabs, .tabs-background-light > .tabs {
     background-color: #202020;
-    background-image: linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
+    background-image: none;
     border-color: #ddd; }
 
 .tabs-background-stable .tabs, .tabs-background-stable > .tabs {
     background-color: #505050;
-    background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
+    background-image: none;
     border-color: #b2b2b2; }
 
 .tabs-background-positive .tabs, .tabs-background-positive > .tabs {
     background-color: #4a87ee;
-    background-image: linear-gradient(0deg, #1b6aea, #1b6aea 50%, transparent 50%);
+    background-image: none;
     border-color: #1b6aea; }
 
 .tabs-background-calm .tabs, .tabs-background-calm > .tabs {
     background-color: #a0aeb0;
-    background-image: linear-gradient(0deg, #849699, #849699 50%, transparent 50%);
+    background-image: none;
     border-color: #849699; }
 
 .tabs-background-assertive .tabs, .tabs-background-assertive > .tabs {
     background-color: #ef4e3a;
-    background-image: linear-gradient(0deg, #e42712, #e42712 50%, transparent 50%);
+    background-image: none;
     border-color: #e42712; }
 
 .tabs-background-balanced .tabs, .tabs-background-balanced > .tabs {
     background-color: #00bc8c;
-    background-image: linear-gradient(0deg, #00bc8c, #00bc8c 50%, transparent 50%);
+    background-image: none;
     border-color: #00bc8c; }
 
 .tabs-background-energized .tabs, .tabs-background-energized > .tabs {
     background-color: #f0b840;
-    background-image: linear-gradient(0deg, #eeac28, #eeac28 50%, transparent 50%);
+    background-image: none;
     border-color: #eeac28; }
 
 .tabs-background-royal .tabs, .tabs-background-royal > .tabs {
     background-color: #391a9d;
-    background-image: linear-gradient(0deg, #2c147a, #2c147a 50%, transparent 50%);
+    background-image: none;
     border-color: #2c147a; }
 
 .tabs-background-dark .tabs, .tabs-background-dark > .tabs {
     background-color: #202020;
-    background-image: linear-gradient(0deg, #111, #111 50%, transparent 50%);
+    background-image: none;
     border-color: #111; }
 
 .tabs-color-light .tab-item {

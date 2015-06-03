@@ -10,6 +10,7 @@
 																				 $rootScope,
 																				 $stateParams,
 																				 $interval,
+																				 $timeout,
 																				 $ionicModal,
 																				 moment,
 																				 sessionRepository,
@@ -104,7 +105,14 @@
 
 			$scope.showDrinkInfoModal = function(drink) {
 				$scope.selectedDrink = drink;
-				$scope.drinkInfoModal.show();
+				$scope.mapLocation = null;
+				$scope.drinkInfoModal.show()
+					.then(function() {
+						//delay loading the map by a half second to let any animations finish
+						$timeout(function() {
+							$scope.mapLocation = drink.location;
+						}, 500);
+					});
 			};
 
 			var pendingBottleCaps = [];
