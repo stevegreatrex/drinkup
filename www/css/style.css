@@ -149,6 +149,7 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
 
 .stats.times .stat-label .stat {
     white-space: pre-line;
+    font-size: 44px;
 }
 
 .slider {

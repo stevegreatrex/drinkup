@@ -49,14 +49,14 @@
 			});
 
 			sessionRepository.getSession($stateParams.sessionId)
-				.then(function(session) {
+				.then(function (session) {
 					$scope.session = session;
 					$scope.description = session.description;
 					$scope.drinks = session.drinks;
 					$scope.bottleCaps = session.bottleCaps || [];
 
 					$scope.startDate = session.drinks.length ?
-						moment(session.drinks[session.drinks.length-1].date) : moment(session.startDate);
+						moment(session.drinks[session.drinks.length - 1].date) : moment(session.startDate);
 					updateStats();
 				});
 
