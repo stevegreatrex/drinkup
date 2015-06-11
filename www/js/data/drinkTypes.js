@@ -4041,6 +4041,41 @@
 				category: 'shot',
 				calPerMl: 3,
 				id: 570
+			},
+			{
+				name: 'Rebellion IPA',
+				abv: 3.7,
+				category: 'beer',
+				calPerMl: 0.1894,
+				id: 571
+			},
+			{
+				name: 'Rebellion Smuggler',
+				abv: 4.2,
+				category: 'beer',
+				calPerMl: 0.2165,
+				id: 572
+			},
+			{
+				name: 'Rebellion Mutiny',
+				abv: 4.5,
+				category: 'beer',
+				calPerMl: 0.2376,
+				id: 573
+			},
+			{
+				name: 'Rebellion Red',
+				abv: 4.5,
+				category: 'beer',
+				calPerMl: 0.2376,
+				id: 574
+			},
+			{
+				name: 'Morland Old Speckled Hen',
+				abv: 3.5,
+				category: 'beer',
+				calPerMl: 0.1845,
+				id: 575
 			}
 		])
 
