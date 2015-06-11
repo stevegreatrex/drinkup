@@ -79,6 +79,7 @@
 
 			$scope.addDrink = function(drinkType, serving) {
 				$scope.addDrinkModal.hide();
+				$scope.drinkInfoModal.hide();
 				if (!drinkType || !serving) { return; }
 
 				$scope.addingDrink = true;

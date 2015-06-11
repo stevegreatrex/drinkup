@@ -27,6 +27,9 @@
 	</ion-content>
 	<ion-footer-bar>
 		<button class="button button-assertive" ng-click="deleteDrink(selectedDrink)">Delete</button>
-		<button class="button button-positive" ng-click="drinkInfoModal.hide()">Done</button>
+		<div class="button-bar">
+			<button class="button button-balanced" ng-click="addDrink(selectedDrink.drinkType, selectedDrink.serving)">Same Again</button>
+			<button class="button button-positive" ng-click="drinkInfoModal.hide()">Done</button>
+		</div>
 	</ion-footer-bar>
 </ion-modal-view>
