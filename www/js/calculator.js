@@ -2,17 +2,18 @@
  * Created by Stephen on 21/05/2015.
  */
 
-(function(angular) {
+(function (angular) {
 	angular.module('drinkup.calculator', [])
 
 		.constant('genderConstants', {
-			male: 0.58,
+			male:   0.58,
 			female: 0.49
 		})
 
 		.constant('drivingLimit', 0.08)
+		.constant('metabolisedPerHour', 0.016)
 
-		.factory('calculator',function(moment, genderConstants, drivingLimit) {
+		.factory('calculator', function (moment, genderConstants, drivingLimit, metabolisedPerHour) {
 			return {
 				/**
 				 * Calculates blood alcohol level at the specified time
@@ -21,12 +22,12 @@
 				 * @param units
 				 * @returns {number}
 				 */
-				calculateBloodAlcohol: function(profile, timeSinceFirstDrink, units) {
+				calculateBloodAlcohol: function (profile, timeSinceFirstDrink, units) {
 					//http://en.wikipedia.org/wiki/Blood_alcohol_content#Estimated_blood_ethanol_concentration_.28EBAC.29
-					var alcoholConsumed = units * 0.806 * 1.2;
-					var bac = alcoholConsumed / (profile.weight * genderConstants[profile.gender]);
-					var alcoholMetabolised = moment.duration(timeSinceFirstDrink).as('hours') * 0.015;
-					var result = bac - alcoholMetabolised;
+					var alcoholConsumed    = units * 0.806 * 1.2;
+					var bac                = alcoholConsumed / (profile.weight * genderConstants[profile.gender]);
+					var alcoholMetabolised = moment.duration(timeSinceFirstDrink).as('hours') * metabolisedPerHour;
+					var result             = bac - alcoholMetabolised;
 
 					return result < 0 ? 0 : result;
 				},
@@ -36,8 +37,8 @@
 				 * @param currentBac Current blood alcohol level
 				 * @returns {moment}
 				 */
-				timeUntilSober: function(currentBac) {
-					return moment.duration(currentBac / 0.015, 'hours');
+				timeUntilSober: function (currentBac) {
+					return moment.duration(currentBac / metabolisedPerHour, 'hours');
 				},
 
 				/**
@@ -46,8 +47,8 @@
 				 * @param currentBac Current blood alcohol level
 				 * @returns {moment}
 				 */
-				timeUntilLegal: function(currentBac) {
-					return moment.duration((currentBac - drivingLimit) / 0.015, 'hours');
+				timeUntilLegal: function (currentBac) {
+					return moment.duration((currentBac - drivingLimit) / metabolisedPerHour, 'hours');
 				}
 			};
 		});
