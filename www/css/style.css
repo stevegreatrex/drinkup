@@ -291,3 +291,22 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
     text-align: center;
     font-size: 20px;
 }
+
+.drink-builder .category-picker :not(.active) drink-icon {
+    color: #999;
+}
+
+.drink-builder .input-label {
+    color: #909090;
+}
+
+.drink-builder .icon {
+    width: 30px;
+}
+
+.drink-builder .category-picker .button {
+    border:none;
+    padding: 0 10px;
+    min-height: 40px;
+    height: 40px;
+}

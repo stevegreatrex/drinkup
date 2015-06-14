@@ -3,20 +3,30 @@
 		  view-title="{{drinkType.name}}">
 
 	<form name="drinkForm">
-		<div class="button-bar">
-
+		<label class="item item-input">
+			<input type="text" ng-model="drinkType.name" required placeholder="Drink Name" class="drink-name">
+		</label>
+		<div class="button-bar category-picker">
 			<label ng-repeat="category in drinkCategories"
-					title="{{category}}"
-					ng-class="{ active: category === drinkType.category }"
-					ng-click="selectCategory(category)"
-					class="button">
+				   title="{{category}}"
+				   ng-class="{ active: category === drinkType.category }"
+				   ng-click="selectCategory(category)"
+				   class="button">
 				<drink-icon drink-type="{ category: category }"></drink-icon>
 			</label>
-
 		</div>
-		<label class="item item-input">
-			<input type="text" ng-model="drinkType.name" placeholder="Drink Name" class="drink-name">
-		</label>
+		<div class="list">
+			<label class="item item-input">
+				<i class="icon fa fa-pie-chart placeholder-icon"></i>
+				<span class="input-label">ABV %</span>
+				<input type="number" placeholder="ABV" required ng-model="drinkType.abv">
+			</label>
+			<label class="item item-input">
+				<i class="icon fa fa-cutlery placeholder-icon"></i>
+				<span class="input-label">Calories</span>
+				<input type="number" placeholder="Calories (100ml)" required ng-model="calories.per100">
+			</label>
+		</div>
 
 		<div class="button-bar">
 			<button class="button button-dark" ng-click="cancel()">Cancel</button>
