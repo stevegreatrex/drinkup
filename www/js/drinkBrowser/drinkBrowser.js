@@ -16,14 +16,14 @@
 			};
 		})
 
-		.controller('DrinkBrowserCtrl', function ($scope, $rootScope, $state, $ionicModal, drinkEvents, drinkTypesRepository) {
+		.controller('DrinkBrowserCtrl', function ($scope, $rootScope, $state, $ionicModal, DrinkEvents, drinkTypesRepository) {
 			$scope.drinkTypes = drinkTypesRepository.getAll();
 
 			$scope.newDrink = function() {
 				$state.go('app.drink');
 			};
 
-			$rootScope.$on(drinkEvents.drinkTypeAdded, function() {
+			$rootScope.$on(DrinkEvents.drinkTypeSaved, function() {
 				$scope.drinkTypes = drinkTypesRepository.getAll();
 			});
 		});

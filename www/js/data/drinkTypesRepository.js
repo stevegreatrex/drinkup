@@ -7,8 +7,8 @@
 (function(angular) {
 	angular.module('drinkup.data.drinkTypes', [])
 
-		.constant('drinkEvents', {
-			drinkTypeAdded: 'DrinkTypeAdded'
+		.constant('DrinkEvents', {
+			drinkTypeSaved: 'DrinkTypeAdded'
 		})
 
 		.constant('drinkCategories', {
@@ -4097,7 +4097,7 @@
 			return drinkTypesRepository.getAll();
 		})
 
-		.factory('drinkTypesRepository', function($rootScope, defaultDrinkTypes, drinkEvents) {
+		.factory('drinkTypesRepository', function($rootScope, defaultDrinkTypes, DrinkEvents) {
 			/**
 			 * Repository for types of drink
 			 * @constructor
@@ -4148,7 +4148,7 @@
 
 				this._drinks.push(drinkType);
 				localStorage.setItem(DrinkTypesRepository.storageKey, JSON.stringify(this._drinks));
-				$rootScope.$broadcast(drinkEvents.drinkTypeAdded);
+				$rootScope.$broadcast(DrinkEvents.drinkTypeSaved, drinkType);
 			};
 
 			return new DrinkTypesRepository();

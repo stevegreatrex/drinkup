@@ -7,6 +7,7 @@
 
 		.controller('SessionCtrl', function ($scope,
 																				 $rootScope,
+																				 $state,
 																				 $stateParams,
 																				 $interval,
 																				 $timeout,
@@ -19,6 +20,7 @@
 																				 profile,
 																				 ProfileEvents,
 																				 SessionEvents,
+																				 DrinkEvents,
 																				 drinkTypes,
 																				 drinkCategories,
 																				 drivingLimit,
@@ -92,6 +94,12 @@
 						updateStats();
 						$scope.addingDrink = false;
 					});
+			};
+
+			$scope.createNewDrink = function() {
+				$scope.addDrinkModal.hide();
+				$scope.awaitingCreateNewDrink = true;
+				$state.go('app.drink');
 			};
 
 			$scope.sameAgain = function () {
@@ -285,6 +293,14 @@
 
 				$scope.bottleCaps.push(bottleCap);
 				$scope.showBottleCapModal(bottleCap);
+			});
+
+			$rootScope.$on(DrinkEvents.drinkTypeSaved, function(event, drinkType) {
+				if ($scope.awaitingCreateNewDrink) {
+					$scope.newDrink.type = drinkType;
+					$scope.addDrinkModal.show();
+					$scope.awaitingCreateNewDrink = false;
+				}
 			});
 		});
 }(angular));
