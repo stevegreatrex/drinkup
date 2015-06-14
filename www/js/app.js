@@ -31,7 +31,9 @@
 		'drinkup.menu',
 		'drinkup.home',
 		'drinkup.session',
-		'drinkup.profile'
+		'drinkup.profile',
+		'drinkup.drinkBrowser',
+		'drinkup.drinkBuilder'
 	])
 
     .run(function($ionicPlatform) {
@@ -80,6 +82,26 @@
 						content: {
 							templateUrl: 'js/profile/profile.html',
 							controller: 'ProfileCtrl'
+						}
+					}
+				})
+
+				.state('app.drinks', {
+					url: '/drinks',
+					views: {
+						content: {
+							templateUrl: 'js/drinkBrowser/drink-browser.html',
+							controller: 'DrinkBrowserCtrl'
+						}
+					}
+				})
+
+				.state('app.drink', {
+					url: '/drinks/:drinkId',
+					views: {
+						content: {
+							templateUrl: 'js/drinkBuilder/drink-builder.html',
+							controller: 'DrinkBuilderCtrl'
 						}
 					}
 				})

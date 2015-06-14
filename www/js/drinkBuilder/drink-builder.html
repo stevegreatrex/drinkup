@@ -1,0 +1,29 @@
+<ion-view ng-controller="DrinkBuilderCtrl"
+		  class="drink-builder"
+		  view-title="{{drinkType.name}}">
+
+	<form name="drinkForm">
+		<div class="button-bar">
+
+			<label ng-repeat="category in drinkCategories"
+					title="{{category}}"
+					ng-class="{ active: category === drinkType.category }"
+					ng-click="selectCategory(category)"
+					class="button">
+				<drink-icon drink-type="{ category: category }"></drink-icon>
+			</label>
+
+		</div>
+		<label class="item item-input">
+			<input type="text" ng-model="drinkType.name" placeholder="Drink Name" class="drink-name">
+		</label>
+
+		<div class="button-bar">
+			<button class="button button-dark" ng-click="cancel()">Cancel</button>
+			<input type="submit" class="button button-balanced"
+				   value="Save"
+				   ng-click="saveDrink()"
+				   ng-disabled="drinkForm.$invalid"/>
+		</div>
+	</form>
+</ion-view>

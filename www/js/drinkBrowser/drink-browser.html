@@ -1,0 +1,16 @@
+<ion-view view-title="Drinks">
+	<ion-scroll direction="y">
+		<button class="button button-balanced" ng-click="newDrink()">Add</button>
+		<ion-list>
+			<label class="item item-input">
+				<i class="icon ion-search placeholder-icon"></i>
+				<input type="search" placeholder="Search Drinks" ng-model="searchString">
+			</label>
+			<ion-item collection-repeat="drinkType in drinkTypes | drinkSearch:searchString"
+					href="#/app/drinks/{{drinkType.id}}">
+				<drink-icon drink-type="drinkType"></drink-icon>
+				{{drinkType.name}}
+			</ion-item>
+		</ion-list>
+	</ion-scroll>
+</ion-view>

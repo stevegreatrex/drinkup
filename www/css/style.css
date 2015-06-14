@@ -286,3 +286,8 @@ input.ion-autocomplete::-webkit-input-placeholder { color: #ddd }
     font-size: 20px;
     color: #909090;
 }
+
+.drink-builder .drink-name {
+    text-align: center;
+    font-size: 20px;
+}

@@ -7,6 +7,10 @@
 (function(angular) {
 	angular.module('drinkup.data.drinkTypes', [])
 
+		.constant('drinkEvents', {
+			drinkTypeAdded: 'DrinkTypeAdded'
+		})
+
 		.constant('drinkCategories', {
 			beer: {
 				servings: [
@@ -18,7 +22,9 @@
 					{ name: '330ml', ml: 330 },
 					{ name: '300ml', ml: 300 },
 					{ name: '200ml', ml: 200 }
-				]
+				],
+				typicalAbv: 4,
+				typicalCalPerMl: 0.4
 			},
 			wine: {
 				servings: [
@@ -26,18 +32,24 @@
 					{ name: 'Small Glass', ml: 125 },
 					{ name: '250ml', ml: 250 },
 					{ name: '125ml', ml: 125 }
-				]
+				],
+				typicalAbv: 12,
+				typicalCalPerMl: 0.7
 			},
 			shot: {
 				servings: [
 					{ name: 'Double', ml: 50 },
 					{ name: 'Single', ml: 25 }
-				]
+				],
+				typicalAbv: 40,
+				typicalCalPerMl: 2.5
 			},
 			cocktail: {
 				servings: [
 					{ name: 'One Drink', ml: 170 }
-				]
+				],
+				typicalAbv: 25,
+				typicalCalPerMl: 2
 			},
 			other: {
 				servings: [
@@ -47,11 +59,13 @@
 					{ name: '200ml', ml: 200 },
 					{ name: '100ml', ml: 100 },
 					{ name: '50ml', ml: 50 }
-				]
+				],
+				typicalAbv: 10,
+				typicalCalPerMl: 1
 			}
 		})
 
-		.constant('drinkTypesData', [
+		.constant('defaultDrinkTypes', [
 			{
 				name: '1554 Enlightened Black Ale',
 				abv: 5.6,
@@ -4079,11 +4093,64 @@
 			}
 		])
 
-		.factory('drinkTypes', function(drinkTypesData) {
-			drinkTypesData.sort(function(a,b) {
-				return a.name < b.name ? -1 : 1;
-			});
+		.factory('drinkTypes', function(drinkTypesRepository) {
+			return drinkTypesRepository.getAll();
+		})
 
-			return drinkTypesData;
+		.factory('drinkTypesRepository', function($rootScope, defaultDrinkTypes, drinkEvents) {
+			/**
+			 * Repository for types of drink
+			 * @constructor
+			 */
+			function DrinkTypesRepository(){
+				if (!localStorage.getItem(DrinkTypesRepository.storageKey)) {
+					localStorage.setItem(DrinkTypesRepository.storageKey, JSON.stringify(defaultDrinkTypes));
+				}
+
+				this._drinks = JSON.parse(localStorage.getItem(DrinkTypesRepository.storageKey));
+			}
+
+			/**
+			 * Storage key for localStorage
+			 * @type {string}
+			 */
+			DrinkTypesRepository.storageKey = 'drinkTypes';
+
+			/**
+			 * Get available drink types
+			 */
+			DrinkTypesRepository.prototype.getAll = function() {
+				this._drinks.sort(function(a,b) {
+					return a.name < b.name ? -1 : 1;
+				});
+
+				return this._drinks;
+			};
+
+			DrinkTypesRepository.prototype.get = function(id) {
+				return this.getAll().filter(function(d) { return d.id === +id; })[0];
+			};
+
+			/**
+			 * Update or add the specified drink type
+			 * @param drinkType
+			 */
+			DrinkTypesRepository.prototype.save = function(drinkType) {
+				var existing = this.get(drinkType.id);
+
+				if (!drinkType.id) {
+					drinkType.id = this._drinks.length;
+				}
+
+				if (existing) {
+					this._drinks.splice(this._drinks.indexOf(existing), 1);
+				}
+
+				this._drinks.push(drinkType);
+				localStorage.setItem(DrinkTypesRepository.storageKey, JSON.stringify(this._drinks));
+				$rootScope.$broadcast(drinkEvents.drinkTypeAdded);
+			};
+
+			return new DrinkTypesRepository();
 		});
 }(angular));
